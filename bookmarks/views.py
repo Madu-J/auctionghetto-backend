@@ -1,5 +1,5 @@
 from rest_framework import generics, permissions
-from .models import Bookmark
+from bookmarks.models import Bookmark
 from .serializers import BookmarkSerializer
 from auctionghetto_api.permissions import IsOwnerOrReadOnly
 
