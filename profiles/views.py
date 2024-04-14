@@ -1,8 +1,8 @@
-from rest_framework.views import APIView, filters, permissions
+from django.db.models import Count
+from rest_framework import generics, filters, permissions
 from django_filters.rest_framework import DjangoFilterBackend
 from auctionghetto_api.permissions import IsOwnerOrReadOnly
 from .models import Profile
-from django.db.models import Count
 from .serializers import ProfileSerializer
 
 
@@ -13,7 +13,7 @@ class IsOwnerOrReadOnly(permissions.BasePermission):
         return obj.owner == request.user
 
 
-class ProfileList(APIView):
+class ProfileList(generics.ListAPIView):
     """
     Profile list for logged in user.
 
@@ -40,7 +40,7 @@ class ProfileList(APIView):
         "owner__followed__created_at",
     ]
 
-class ProfileDetails(APIView):
+class ProfileDetails(generics.RetrieveUpdateAPIView):
     """
     Profile details allows users to edit or delete their profiles.
     """
