@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import Auctions
-
+from bookmarks import BookMark
 
 class AuctionsSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source="owner.username")
@@ -9,7 +9,8 @@ class AuctionsSerializer(serializers.ModelSerializer):
     profile_image = serializers.ReadOnlyField(
         source="owner.profile.image.url"
         )
-    save_id = serializers.SerializerMethodField()
+    bookmark_id = serializers.SerializerMethodField()
+    bookmarks_count = serializers.SerializerMethodField()
 
     def validate_image(self, value):
         if value.size > 4096 * 4096 * 2:
@@ -30,11 +31,11 @@ class AuctionsSerializer(serializers.ModelSerializer):
         request = self.context["request"]
         return request.user == obj.owner
 
-    def get_save_id(self, obj):
+    def get_bookmark_id(self, obj):
         user = self.context["request"].user
         if user.is_authenticated:
-            save = Save.objects.filter(owner=user, auctions=obj).first()
-            return save.id if save else None
+            bookmark = BookMark.objects.filter(owner=user, auctions=obj).first()
+            return bookmark.id if bookmark else None
         return None
 
     class Meta:

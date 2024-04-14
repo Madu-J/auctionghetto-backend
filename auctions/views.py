@@ -20,6 +20,7 @@ class AuctionList(generics.ListCreateAPIView):
     ]
     filterset_fields = [
         "owner__followed__owner__profile",
+        "bookmarks__owner__profile",
         "owner__profile",
     ]
     search_fields = [

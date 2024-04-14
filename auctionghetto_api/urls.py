@@ -23,4 +23,5 @@ urlpatterns = [
     path('', include('auctions.urls')),
     path('', include('profiles.urls')),
     path('', include('followers.urls')),
+    path('', include('bookmarks.urls')),
 ]

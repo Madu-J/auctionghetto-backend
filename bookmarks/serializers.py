@@ -1,20 +1,18 @@
 from django.db import IntegrityError
 from rest_framework import serializers
-from .models import Follower
+from .models import BookMark
 
 
-class FollowerSerializer(serializers.ModelSerializer):
+class BookmarkSerializer(serializers.ModelSerializer):
     """
-    Follower Serializer
+    Bookmark Serializer
     """
-
-    owner = serializers.ReadOnlyField(source="owner.user")
-    followed_name = serializers.ReadOnlyField(source="followed.user")
+    owner = serializers.ReadOnlyField(source="owner.username")
 
     class Meta:
-        model = Follower
+        model = Bookmark
         fields = "__all__"
-    
+
     def create(self, validated_data):
         try:
             return super().create(validated_data)

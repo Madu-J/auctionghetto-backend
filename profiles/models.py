@@ -5,7 +5,7 @@ from django.db.models.signals import post_save
 
 class Profile(models.Model):
     """
-    Model for user accout/profile
+    Model for user profile
     """
     owner = models.OneToOneField(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -31,5 +31,6 @@ class Profile(models.Model):
 def create_profile(sender, instance, created, **kwargs):
         if created:
             Profile.objects.create(owner=instance)
+
 
 post_save.connect(create_profile, sender=User)

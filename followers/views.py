@@ -18,7 +18,9 @@ class FollowerList(generics.ListCreateAPIView):
 
 
 class FollowerDetails(generics.RetrieveDestroyAPIView):
-    """Retrieve a follower"""
+    """
+    Retrieve a follower
+    """
 
     permission_classes = [IsOwnerOrReadOnly]
     queryset = Follower.objects.all()
