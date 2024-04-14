@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import Auctions
-from bookmarks import BookMark
+from bookmarks.models import Bookmark
 
 class AuctionsSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source="owner.username")
@@ -10,7 +10,6 @@ class AuctionsSerializer(serializers.ModelSerializer):
         source="owner.profile.image.url"
         )
     bookmark_id = serializers.SerializerMethodField()
-    bookmarks_count = serializers.SerializerMethodField()
 
     def validate_image(self, value):
         if value.size > 4096 * 4096 * 2:
