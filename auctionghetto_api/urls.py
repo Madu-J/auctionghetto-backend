@@ -22,4 +22,5 @@ urlpatterns = [
     path('dj-rest-auth/', include('dj_rest_auth.urls')),
     path('', include('auctions.urls')),
     path('', include('profiles.urls')),
+    path('', include('followers.urls')),
 ]
