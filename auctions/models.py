@@ -6,7 +6,7 @@ class Auctions(models.Model):
     """
     Field model for categories of product.
     """
-    auctions_choices = [
+    productgategory_choices = [
         ('home', 'Home'),
         ('office', 'Office'),
         ('building', 'Building'),
@@ -22,10 +22,24 @@ class Auctions(models.Model):
         ('bicycle', 'Bicycle'),
         ('bed', 'Bed'),
         ('refrigerator', 'Refrigerator'),
-        ('motocycle', 'Motocycle'),
         ('pc', 'Pc'),
-        ('car', 'Car'),
         ('phones', 'Phones'),
+    ]
+
+    autocategory_choices = [
+        ('car', 'Car'),
+        ('minibus', 'Minibus'),
+        ('truck', 'Truck'),
+        ('bus', 'Bus'),
+        ('escavator', 'Escavator'),
+        ('motocycle', 'Motocycle'),
+    ]
+
+    fueltype_choices = [
+        ('petrol', 'Petrol'),
+        ('hybrid', 'Hybrid'),
+        ('diesel', 'Diesel'),
+        ('electric', 'Electric'),
     ]
 
     openingday_choices = [
@@ -40,15 +54,20 @@ class Auctions(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     title = models.CharField(max_length=20)
-    auctions = models.CharField(
-        max_length=20, choices=auctions_choices)
+    productgategory = models.CharField(
+        max_length=30, choices=productgategory_choices)
     bidder = models.CharField(max_length=30, choices=bidder_choices)
-    openingdays = models.CharField(
+    autocategory = models.CharField(max_length=30, choices=autocategory_choices)
+    openingday = models.CharField(
         max_length=30, choices=openingday_choices, default='monday')
     description = models.TextField()
+    year = models.PositiveIntegerField()
     price = models.FloatField()
     image = models.ImageField(
         upload_to='images/', default='../default_post_dwzcuabfl'
+    )
+    fueltype = models.CharField(
+        max_length=32, choices=fueltype_choices, default="petrol"
     )
 
     class Meta:

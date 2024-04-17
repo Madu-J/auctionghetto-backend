@@ -10,7 +10,9 @@ class Follower(models.Model):
     'unique_together' prevents duplicate followers.
     """
 
-    owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name="following")
+    owner = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="following"
+    )
     followed = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="followed"
     )

@@ -60,7 +60,7 @@ REST_AUTH_SERIALIZERS = {
 SECRET_KEY = 'django-insecure-y3*w3nee1uq@pcbfl1cergw#nl@g_j^#4jcp5jb$c_65^v(nkw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = "DEV" in os.environ
 
 ALLOWED_HOSTS = ['8000-maduj-auctionghettobac-3c7m7qoq92q.ws-eu110.gitpod.io']
 
@@ -139,7 +139,6 @@ WSGI_APPLICATION = 'auctionghetto_api.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
 if 'DEV' in os.environ:
     DATABASES = {
         'default': {

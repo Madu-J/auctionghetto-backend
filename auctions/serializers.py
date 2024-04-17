@@ -33,7 +33,9 @@ class AuctionsSerializer(serializers.ModelSerializer):
     def get_bookmark_id(self, obj):
         user = self.context["request"].user
         if user.is_authenticated:
-            bookmark = BookMark.objects.filter(owner=user, auctions=obj).first()
+            bookmark = Bookmark.objects.filter(
+                owner=user, auctions=obj
+            ).first()
             return bookmark.id if bookmark else None
         return None
 
