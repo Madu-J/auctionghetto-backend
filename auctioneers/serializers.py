@@ -3,7 +3,7 @@ from .models import Auctioneer
 from followers.models import Follower
 
 
-class auctioneerSerializer(serializers.ModelSerializer):
+class AuctioneerSerializer(serializers.ModelSerializer):
     """
     Auctioneer serializer
     """

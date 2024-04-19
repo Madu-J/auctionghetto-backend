@@ -6,7 +6,7 @@ class Auctions(models.Model):
     """
     Field model for categories of product.
     """
-    productgategory_choices = [
+    productcategory_choices = [
         ('home', 'Home'),
         ('office', 'Office'),
         ('building', 'Building'),
@@ -42,7 +42,7 @@ class Auctions(models.Model):
         ('electric', 'Electric'),
     ]
 
-    openingday_choices = [
+    auctionstartday_choices = [
         ('monday', 'Monday'),
         ('tuesday', 'Tuesday'),
         ('wednesday', 'Wednesday'),
@@ -55,11 +55,11 @@ class Auctions(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     title = models.CharField(max_length=20)
     productcategory = models.CharField(
-        max_length=30, choices=productgategory_choices)
+        max_length=30, choices=productcategory_choices)
     bidder = models.CharField(max_length=30, choices=bidder_choices)
     autocategory = models.CharField(max_length=30, choices=autocategory_choices)
-    openingday = models.CharField(
-        max_length=30, choices=openingday_choices, default='monday')
+    auctionstartday = models.CharField(
+        max_length=30, choices=auctionstartday_choices, default='monday')
     description = models.TextField()
     year = models.PositiveIntegerField()
     price = models.FloatField()
