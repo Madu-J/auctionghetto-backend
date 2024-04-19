@@ -62,7 +62,11 @@ SECRET_KEY = 'django-insecure-y3*w3nee1uq@pcbfl1cergw#nl@g_j^#4jcp5jb$c_65^v(nkw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = "DEV" in os.environ
 
-ALLOWED_HOSTS = ['8000-maduj-auctionghettobac-3c7m7qoq92q.ws-eu110.gitpod.io']
+ALLOWED_HOSTS = [
+    'localhost', 
+    'auctionghetto-api.herokuapp.com',
+    '8000-maduj-auctionghettobac-3c7m7qoq92q.ws-eu110.gitpod.io'
+]
 
 
 # Application definition
@@ -88,10 +92,11 @@ INSTALLED_APPS = [
     "corsheaders",
 
     'auctions',
-    'profiles',
+    'auctioneers',
     'followers',
     'bookmarks',
 ]
+
 SITE_ID = 1
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

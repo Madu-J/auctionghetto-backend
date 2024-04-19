@@ -1,11 +1,11 @@
 from rest_framework import serializers
-from .models import Profile
+from .models import Auctioneer
 from followers.models import Follower
 
 
-class ProfileSerializer(serializers.ModelSerializer):
+class auctioneerSerializer(serializers.ModelSerializer):
     """
-    Profile serializer
+    Auctioneer serializer
     """
     owner = serializers.ReadOnlyField(source='owner.username')
     is_owner = serializers.SerializerMethodField()
@@ -28,5 +28,5 @@ class ProfileSerializer(serializers.ModelSerializer):
         return None
 
     class Meta:
-        model = Profile
+        model = Auctioneer
         fields = "__all__"

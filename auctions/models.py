@@ -50,11 +50,11 @@ class Auctions(models.Model):
     ]
 
    
-    owner = models.ForeignKey(User, on_delete=models.CASCADE)
+    owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='auction')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     title = models.CharField(max_length=20)
-    productgategory = models.CharField(
+    productcategory = models.CharField(
         max_length=30, choices=productgategory_choices)
     bidder = models.CharField(max_length=30, choices=bidder_choices)
     autocategory = models.CharField(max_length=30, choices=autocategory_choices)

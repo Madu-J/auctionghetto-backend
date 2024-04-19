@@ -2,8 +2,8 @@ from django.db.models import Count
 from rest_framework import generics, filters, permissions
 from django_filters.rest_framework import DjangoFilterBackend
 from auctionghetto_api.permissions import IsOwnerOrReadOnly
-from .models import Profile
-from .serializers import ProfileSerializer
+from .models import Auctioneer
+from .serializers import AuctioneerSerializer
 
 
 class IsOwnerOrReadOnly(permissions.BasePermission):
@@ -13,14 +13,14 @@ class IsOwnerOrReadOnly(permissions.BasePermission):
         return obj.owner == request.user
 
 
-class ProfileList(generics.ListAPIView):
+class AuctioneerList(generics.ListAPIView):
     """
-    Profile list for logged in user.
+    Auctioneer list for logged in.
 
     """
-    serializer_class = ProfileSerializer
-    queryset = Profile.objects.annotate(
-        auctions_count=Count("owner__auctions", distinct=True),
+    serializer_class = AuctioneerSerializer
+    queryset = Auctioneer.objects.annotate(
+        auctions_count=Count("owner__auction", distinct=True),
         followers_count=Count("owner__followed", distinct=True),
         following_count=Count("owner__following", distinct=True),
     ).order_by("-created_at")
@@ -29,8 +29,8 @@ class ProfileList(generics.ListAPIView):
         DjangoFilterBackend,
     ]
     filterset_fields = [
-        "owner__following__followed__profile",
-        "owner__followed__owner__profile",
+        "owner__following__followed__auctioneer",
+        "owner__followed__owner__auctioneer",
     ]
     ordering_fields = [
         "auctions_count",
@@ -40,13 +40,13 @@ class ProfileList(generics.ListAPIView):
         "owner__followed__created_at",
     ]
 
-class ProfileDetails(generics.RetrieveUpdateAPIView):
+class AuctioneerDetails(generics.RetrieveUpdateAPIView):
     """
-    Profile details allows users to edit or delete their profiles.
+    Auctioneer details is used for editing or deleting profiles.
     """
-    serializer_class = ProfileSerializer
+    serializer_class = AuctioneerSerializer
     permission_classes = [IsOwnerOrReadOnly]
-    queryset = Profile.objects.annotate(
+    queryset = Auctioneer.objects.annotate(
         auctions_count=Count("owner__auction", distinct=True),
         followers_count=Count("owner__followed", distinct=True),
         following_count=Count("owner__following", distinct=True),
