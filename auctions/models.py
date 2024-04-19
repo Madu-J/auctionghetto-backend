@@ -15,7 +15,7 @@ class Auctions(models.Model):
         ('agriculture', 'Agriculture'),
     ]
 
-    bidder_choices = [
+    item_products_choices = [
         ('furniture', 'Furniture'),
         ('chair', 'Chair'),
         ('table', 'Table'),
@@ -24,6 +24,7 @@ class Auctions(models.Model):
         ('refrigerator', 'Refrigerator'),
         ('pc', 'Pc'),
         ('phones', 'Phones'),
+        ('other', 'Other'),
     ]
 
     autocategory_choices = [
@@ -33,6 +34,7 @@ class Auctions(models.Model):
         ('bus', 'Bus'),
         ('escavator', 'Escavator'),
         ('motocycle', 'Motocycle'),
+        ('other', 'Other'),
     ]
 
     fueltype_choices = [
@@ -40,6 +42,7 @@ class Auctions(models.Model):
         ('hybrid', 'Hybrid'),
         ('diesel', 'Diesel'),
         ('electric', 'Electric'),
+        ('other', 'Other'),
     ]
 
     auctionstartday_choices = [
@@ -56,8 +59,10 @@ class Auctions(models.Model):
     title = models.CharField(max_length=20)
     productcategory = models.CharField(
         max_length=30, choices=productcategory_choices)
-    bidder = models.CharField(max_length=30, choices=bidder_choices)
-    autocategory = models.CharField(max_length=30, choices=autocategory_choices)
+    item_products = models.CharField(
+        max_length=30, choices=item_products_choices, default='0')
+    autocategory = models.CharField(
+        max_length=30, choices=autocategory_choices, default='0')
     auctionstartday = models.CharField(
         max_length=30, choices=auctionstartday_choices, default='monday')
     description = models.TextField()
