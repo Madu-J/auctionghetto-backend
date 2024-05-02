@@ -6,7 +6,7 @@ class Auctions(models.Model):
     """
     Field model for categories of product.
     """
-    productcategory_choices = [
+    categories_choices = [
         ('home', 'Home'),
         ('office', 'Office'),
         ('building', 'Building'),
@@ -15,7 +15,7 @@ class Auctions(models.Model):
         ('agriculture', 'Agriculture'),
     ]
 
-    item_products_choices = [
+    items_choices = [
         ('furniture', 'Furniture'),
         ('chair', 'Chair'),
         ('table', 'Table'),
@@ -27,7 +27,7 @@ class Auctions(models.Model):
         ('other', 'Other'),
     ]
 
-    autocategory_choices = [
+    auto_choices = [
         ('car', 'Car'),
         ('minibus', 'Minibus'),
         ('truck', 'Truck'),
@@ -45,7 +45,7 @@ class Auctions(models.Model):
         ('other', 'Other'),
     ]
 
-    auctionstartday_choices = [
+    auctionday_choices = [
         ('monday', 'Monday'),
         ('tuesday', 'Tuesday'),
         ('wednesday', 'Wednesday'),
@@ -57,14 +57,14 @@ class Auctions(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     title = models.CharField(max_length=20)
-    productcategory = models.CharField(
-        max_length=30, choices=productcategory_choices)
-    item_products = models.CharField(
-        max_length=30, choices=item_products_choices, default='0')
-    autocategory = models.CharField(
-        max_length=30, choices=autocategory_choices, default='0')
-    auctionstartday = models.CharField(
-        max_length=30, choices=auctionstartday_choices, default='monday')
+    categories = models.CharField(
+        max_length=30, choices=categories_choices)
+    items = models.CharField(
+        max_length=30, choices=items_choices, default='0')
+    auto = models.CharField(
+        max_length=30, choices=auto_choices, default='0')
+    auctionday = models.CharField(
+        max_length=30, choices=auctionday_choices, default='monday')
     description = models.TextField()
     year = models.PositiveIntegerField()
     price = models.FloatField()

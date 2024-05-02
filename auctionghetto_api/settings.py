@@ -66,7 +66,7 @@ DEBUG = "DEV" in os.environ
 ALLOWED_HOSTS = [
     'localhost', 
     'auctionghetto-api-17774afbeb21.herokuapp.com',
-    '8000-maduj-auctionghettobac-3c7m7qoq92q.ws-eu110.gitpod.io'
+    '8000-maduj-auctionghettobac-3c7m7qoq92q.ws-eu112.gitpod.io'
 ]
 
 
