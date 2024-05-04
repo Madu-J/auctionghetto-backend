@@ -10,7 +10,6 @@ class Auctioneer(models.Model):
     owner = models.OneToOneField(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    title = models.CharField(max_length=6)
     name = models.CharField(max_length=60)
     email = models.CharField(max_length=60)
     phone = models.CharField(max_length=12)
@@ -19,18 +18,18 @@ class Auctioneer(models.Model):
     city = models.CharField(max_length=40)
     description = models.TextField(blank=True)
     image = models.ImageField(
-        upload_to='images/', default='../default_profile_dwzcuabfl'
+        upload_to='images/', default='../default_auctioneer_dwzcuabfl'
     )
     class Meta:
         ordering = ["-created_at"]
 
     def __str__(self):
-        return f"{self.owner}'s profile"
+        return f"{self.owner}'s auctioneer"
 
 
-def create_profile(sender, instance, created, **kwargs):
+def create_auctioneer(sender, instance, created, **kwargs):
         if created:
             Auctioneer.objects.create(owner=instance)
 
 
-post_save.connect(create_profile, sender=User)
+post_save.connect(create_auctioneer, sender=User)
