@@ -61,13 +61,12 @@ REST_AUTH_SERIALIZERS = {
 SECRET_KEY = 'django-insecure-y3*w3nee1uq@pcbfl1cergw#nl@g_j^#4jcp5jb$c_65^v(nkw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-# DEBUG = "DEV" in os.environ
+DEBUG = "DEV" in os.environ
 
 ALLOWED_HOSTS = [
     'localhost', 
     'auctionghetto-api-17774afbeb21.herokuapp.com',
-    '8000-maduj-auctionghettobac-3c7m7qoq92q.ws-eu112.gitpod.io'
+    '8000-maduj-auctionghettobac-3c7m7qoq92q.ws-eu111.gitpod.io'
 ]
 
 
