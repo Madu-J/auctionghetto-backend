@@ -1,9 +1,48 @@
-### Features
-## Navbar & Search
+## User Experience (UX)
+  Welcome to Auctionghetto, Auctionghetto is an auction platform where potential user sample and sale their products. Our aim is to provide a community friendly platform for both buyers and salers looking to buy or sell their items.
+
+  Following features are available in our site
+  In Auctionghetto we offer a user-friendly interface that allows sellers to effortlessly create captivating listings. Our intuitive posting system ensures that sellers can showcase their auctions with compelling descriptions and high-quality images.
+
+  Advanced Search Functionality: Find your choice product with our advanced search filters. You can refine your search based on specific criteria, eg.. product name, categories, year and so on. 
+
+  You can personalize your choice product as a registered user, you can conveniently bookmark your choice product for a revisit. This feature allows you make an informed decision after you might have compared several other items before buying.
+
+## User Stories
+ * The user stories are readily available in the GitHub repository, neatly grouped into Epics for enhanced organization. This 
+   allows for easy tracking and management of project features. By organizing user stories into Epics, you can get a clear visual representation of the project's progress and understand the high-level goals and themes.
+   ![user-story](media/)
+
+  # Agile methodology
+  * During the project development, I embraced an Agile Methodology, leveraging the powerful capabilities of GitHub Projects 
+    to create User Stories.
+
+## Features
+# Navbar & Search
+   The navbar allow users to explore different sections and easily navigate throughout the site pages of the website conveniently. Whether it's accessing specific categories, browsing through listings, or accessing account-related information, the navbar provides a streamlined way to navigate the site.
+
+   When a user opens the auction page, they are required to log in first in order to bookmark their choice product and have the option to follow them. User won't be able to bookmark their own listed products. The navbar dynamically updates its links based on the user's state. For instance, if a user is logged in, they will see related to their account, such as auctioneer, follow, unfollow, and bookmark an item.
+
+   Additionally, the navbar incorporates a search bar. This search functionality enables users to search among the various listings available on the site. By simply entering keywords or specific criteria into the search bar, users can quickly find relevant listings, making their browsing experience more efficient and tailored to their preferences. 
+
 
 ## Auctionghetto Listings
+* The auction listing section comprehensively displays a collection of available auctions on trade or to be traded. It serves as  
+  a centralized platform for users to browse and explore various auctions that are currently on the market. By aggregating a wide range of auctionghetto listings, it offers convenience and ease of access for potential buyers or interested individuals looking to explore different options.
 
-## Action Details
+  Each auctionghetto listing within the platform provides vital information to assist users in making informed decisions. This information typically includes essential details about any auction, such as:
+
+  Provides listing information and key details about a particular auction item and the day of which trade will kick-start. 
+  The listing also displays the price of the auction, helping users evaluate and offer their own bidding within their budget.
+
+## Action Details page
+* The auction listing section comprehensively displays a collection of available auctions on trade or to be traded. It serves as  
+  a centralized platform for users to browse and explore various auctions that are currently on the market. By aggregating a wide range of auctionghetto listings, it offers convenience and ease of access for potential buyers or interested individuals looking to explore different options.
+
+ Each auctionghetto listing within the platform provides vital information to assist users in making informed decisions. This information typically includes essential details about any auction, such as:
+
+ Provides listing information and key details about a particular auction item and the day of which trade will kick-start. 
+The listing also displays the price of the auction, helping users evaluate and offer their own bidding within their budget.
 
 ## Actions Detail page
 
@@ -11,8 +50,8 @@
   auctionghetto information and empowering post owners with control over their listings
 
 ## Auctions Edit page
-
-  The Auctions Edit page is a dedicated page that allows users to update an existing auctionghetto posts, which provides a convenient and user-friendly interface for modifying details information associated with a particular listing.
+* The Auctions Edit page is a dedicated page that allows users to update an existing auctionghetto posts, which provides a 
+  convenient and user-friendly interface for modifying details information associated with a particular listing.
   Updating Auctionghetto Post: On the Auctions Edit page, users can make changes and updates to an existing auction post. This includes modifying various aspects of listing on the website, such as:
   Editable Fields: Users can update fields such as the price of each auction item, description, technical specifications, features, condition, contact information, and any other relevant details associated with the auction.
 
