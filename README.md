@@ -1,110 +1,167 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+### Features
+## Navbar & Search
 
-Welcome Madu-J Omenka,
+## Auctionghetto Listings
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Action Details
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Actions Detail page
 
-## Gitpod Reminders
+* The page includes these features on the Auctions Detail Page, enhancing the user experience by offering comprehensive 
+  auctionghetto information and empowering post owners with control over their listings
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Auctions Edit page
 
-`python3 -m http.server`
+  The Auctions Edit page is a dedicated page that allows users to update an existing auctionghetto posts, which provides a convenient and user-friendly interface for modifying details information associated with a particular listing.
+  Updating Auctionghetto Post: On the Auctions Edit page, users can make changes and updates to an existing auction post. This includes modifying various aspects of listing on the website, such as:
+  Editable Fields: Users can update fields such as the price of each auction item, description, technical specifications, features, condition, contact information, and any other relevant details associated with the auction.
 
-A blue button should appear to click: _Make Public_,
+  Uploading New Images: Users may also have the option to upload new images or replace existing auction item to provide a potential buyer with clearer picture of auction item.
 
-Another blue button should appear to click: _Open Browser_.
+  Correcting Information and saving changes: If there were any inaccuracies or mistakes in the original auctionghetto post, the Auctions Edit page allows users to correct and update the information, ensuring that the listing provides accurate and reliable details.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Auctioneer page
 
-A blue button should appear to click: _Make Public_,
+  The (Auctioneer page) a profile page plays a vital role in providing sellers with a valuable opportunity to showcase their company effectively. It serves as a dedicated platform where sellers can present their company in a comprehensive and compelling manner to users.
 
-Another blue button should appear to click: _Open Browser_.
+  The auctioneer page allows sellers to create a visually appealing and informative presentation of their product. They can include high-quality images, and to engage users and convey their brand identity effectively.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+  The auctioneer page serves as a critical component of the platform, enabling sellers to effectively market their auction products and increased visibility and locations for pick up.
 
-To log into the Heroku toolbelt CLI:
+## Edit Actioneer
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* Edit Auctioneer feature has been meticulously designed to facilitate sellers in effortlessly updating their existing 
+  information. It offers a user-friendly interface that empowers sellers to make modifications to their profiles with ease, guaranteeing the accuracy and up-to-date information.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* This indispensable functionality enables users to preserve their relevancy in the market by consistently presenting the most 
+  current and pertinent details about who they are and their products to potential customers.
 
-------
+## Feed Page
 
-## Release History
+* The Feed page displays collection of listed auctions, and tailored to the specific preferences of each user. This designed 
+  feature presents a comprehensive display of various product listed by the auctioneers s whom the user follows.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* Feed page serves as a convenient and centralized platform for users to stay constantly updated with the latest inventory from 
+  their preferred sellers. This ensures that users never miss out on exciting auction opportunities and effortlessly provides them with a seamless browsing experience through a personalized selection of items that perfectly align with their unique interests and preference.
 
-**September 20 2023:** Update Python version to 3.9.17.
+## Bookmark page
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* The Bookmark page serves as a meticulously designed and dedicated space, providing users with a seamless and convenient access 
+  point to view all auction they have saved. This feature acts as a personalized collection, offering users a platform to effortlessly keep track of items that have captured their interest or that they intend to revisit later on.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* This page enables users to effortlessly retrieve or review their preferred selections. Also allows users to make comparing and 
+  considering options, making it easier for them to make informed purchasing decisions.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Future Features
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* Payment System: Adding payment feature that will allow users make payment online in a situation where a potential buyer would 
+  prefer to pay online via Auctionghetto website.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* Rating System: To add a rating system that enables buyers to rate their experiences with the auctioneers, as providing valuable 
+  feedback help build trust within users to the website and new users.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* Gallery: Integrate an image gallery with feature that allows load of more pictures to enable users upload multiple pictures of 
+  their products and give a potential buyer clearer picture of item he or she is looking for and make a profitable bargain in the process.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Technologies Used
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* Languages, JavaScript, HTML5 and CSS3
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* Frameworks, Libraries & Programs Used
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* React - Front-end JavaScript library for building user interfaces based on UI components.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* React Bootstrap - Component-based library that provides native Bootstrap components as pure React components.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+* Axios - Promise-based HTTP client for the browser and Node.js. Used to make HTTP requests from throughout the application.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* jwt-decode - Used to decode and extract information from a JWT token.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+* react-router-dom - Routing library for the React JavaScript library. Used to display different components based on the URL 
+  entered in the browser.
 
-------
+* drawSQL - Tool used to create Database Schema/ERD.
 
-## FAQ about the uptime script
+* Git: Version control system used for tracking changes in the source code, with commits and pushes made using the terminal.
 
-**Why have you added this script?**
+* GitHub: Platform used to store the project's code after being pushed from Git.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+* The following modules were installed or enabled in Gitpod to assist with formatting and code linting:
+* ESLint - A code linter that identifies and reports patterns or coding errors in the codebase.
 
-**How will this affect me?**
+* Prettier: An opinionated code formatter that helps maintain consistent code style across the project.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Testing
+* A separate document for testing can be found here.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Bugs
+* Fixed Bugs
+  [ ] to view a list of fixed bugs.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Remaining Bugs
+* No known remaining bugs.
 
-**So….?**
+## Deployment
+* To deploy the project, follow these steps:
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+*  Forking the GitHub Repository
 
-**Can I opt out?**
+* Go to the project repository.
+  In the top-right corner of the page, click the "Fork" button.
+  This will create a copy of the repository in your own GitHub account.
+  Running the project locally
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+* Alternatively, you can use Gitpod:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+* Go to the project repository.
+  Click on the "Code" button.
+  Choose one of the three options (HTTPS, SSH, or GitHub CLI), and click copy.
+  Open your IDE program and launch the terminal.
+  Type git clone and paste the copied URL from step 3.
+  Press Enter, and the local clone of the project will be created.
+  Go to the project repository.
+  Click the green button that says "Gitpod" to open the project in Gitpod.
 
-**Anything more?**
+* Deploying with Heroku
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+  To deploy your project using Heroku, follow the steps below based on the Code Institute tutorial:
+  In the Gitpod CLI, run the following command to create the necessary files for Heroku to install project dependencies:
+  pip3 freeze --local > requirements.txt
 
----
+  Note: Make sure to add the requirements.txt file to your .gitignore file to prevent it from being committed.
+  Visit Heroku.com and log in. If you don't have an account, you will need to create one.
 
-Happy coding!
+  Click the "New" dropdown and select "Create New App".
+  Enter a unique name for your project. Heroku apps require a unique name, and you may be prompted to change it if it's already taken.
+
+* Heroku Deployment
+
+  In the Heroku dashboard, follow these steps:
+  Go to the "Deploy" tab.
+  Connect your Heroku account to your GitHub Repository by following these steps:
+  Click on the "Connect to GitHub" button.
+  Enter the name of your GitHub repository and click on "Search".
+  Choose the correct repository for your application and click on "Connect".
+  Choose your preferred deployment method: manual or automatic.
+  Automatic deployment generates a new application every time you push a change to GitHub.
+  Manual deployment requires you to push the "Deploy Branch" button whenever you want a change to be made.
+  Once you have chosen your deployment method and clicked "Deploy Branch", Heroku will build your application.
+  Finally, you should see the "View" button. Click on it to open your deployed application.
+  Credits
+  Online Documentation
+
+## Credit
+* React Bootstrap documentation and examples
+* CodeInstitute tutorial materials and tutors
+* Suzan Dewitz - github.com/SuzanDewitz/autotraderss
+* Google search engine
+* SlackOverflow
+* Moments walkthrough project
+* Antonio Rodriquez - mentor
+
+## Images
+* Flaticom
+* Icon Packs
+* Vecteezy
+* Pingtree
+* The Noun Project
