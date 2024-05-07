@@ -7,7 +7,7 @@ class Auctioneer(models.Model):
     """
     Model for user profile (Auctioneer) 
     """
-    owner = models.OneToOneField(User, on_delete=models.CASCADE)
+    owner = models.OneToOneField(User, on_delete=models.CASCADE, related_name='auctioneer')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=60)

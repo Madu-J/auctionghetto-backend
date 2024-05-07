@@ -19,9 +19,9 @@ class AuctionList(generics.ListCreateAPIView):
         DjangoFilterBackend,
     ]
     filterset_fields = [
-        "owner__followed__owner__profile",
-        "bookmarks__owner__profile",
-        "owner__profile",
+        "owner__followed",
+        "bookmark__owner",
+        "owner__auctioneer",
     ]
     search_fields = [
         "owner__username",

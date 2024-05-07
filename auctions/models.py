@@ -2,57 +2,56 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
+categories_choices = [
+    ('home', 'Home'),
+    ('office', 'Office'),
+    ('building', 'Building'),
+    ('vehicle', 'Vehicle'),
+    ('industry', 'Industry'),
+    ('agriculture', 'Agriculture'),
+]
+
+items_choices = [
+    ('furniture', 'Furniture'),
+    ('chair', 'Chair'),
+    ('table', 'Table'),
+    ('bicycle', 'Bicycle'),
+    ('bed', 'Bed'),
+    ('refrigerator', 'Refrigerator'),
+    ('pc', 'Pc'),
+    ('phones', 'Phones'),
+    ('other', 'Other'),
+]
+
+auto_choices = [
+    ('car', 'Car'),
+    ('minibus', 'Minibus'),
+    ('truck', 'Truck'),
+    ('bus', 'Bus'),
+    ('escavator', 'Escavator'),
+    ('motocycle', 'Motocycle'),
+    ('other', 'Other'),
+]
+
+fueltype_choices = [
+    ('petrol', 'Petrol'),
+    ('hybrid', 'Hybrid'),
+    ('diesel', 'Diesel'),
+    ('electric', 'Electric'),
+    ('other', 'Other'),
+]
+
+auctionday_choices = [
+    ('monday', 'Monday'),
+    ('tuesday', 'Tuesday'),
+    ('wednesday', 'Wednesday'),
+    ('thursday', 'Thursday'),
+]
+
 class Auctions(models.Model):
     """
     Field model for categories of product.
     """
-    categories_choices = [
-        ('home', 'Home'),
-        ('office', 'Office'),
-        ('building', 'Building'),
-        ('vehicle', 'Vehicle'),
-        ('industry', 'Industry'),
-        ('agriculture', 'Agriculture'),
-    ]
-
-    items_choices = [
-        ('furniture', 'Furniture'),
-        ('chair', 'Chair'),
-        ('table', 'Table'),
-        ('bicycle', 'Bicycle'),
-        ('bed', 'Bed'),
-        ('refrigerator', 'Refrigerator'),
-        ('pc', 'Pc'),
-        ('phones', 'Phones'),
-        ('other', 'Other'),
-    ]
-
-    auto_choices = [
-        ('car', 'Car'),
-        ('minibus', 'Minibus'),
-        ('truck', 'Truck'),
-        ('bus', 'Bus'),
-        ('escavator', 'Escavator'),
-        ('motocycle', 'Motocycle'),
-        ('other', 'Other'),
-    ]
-
-    fueltype_choices = [
-        ('petrol', 'Petrol'),
-        ('hybrid', 'Hybrid'),
-        ('diesel', 'Diesel'),
-        ('electric', 'Electric'),
-        ('other', 'Other'),
-    ]
-
-    auctionday_choices = [
-        ('monday', 'Monday'),
-        ('tuesday', 'Tuesday'),
-        ('wednesday', 'Wednesday'),
-        ('thursday', 'Thursday'),
-    ]
-
-   
     owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='auction')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
