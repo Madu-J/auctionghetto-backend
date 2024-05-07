@@ -195,6 +195,8 @@
 
 ## Bugs
 * Fixed Bugs
+- Avatar
+- Image
   I am having issues with images.
 
 ## Remaining Bugs
