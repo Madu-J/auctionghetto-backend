@@ -1,6 +1,7 @@
-<h1 style="font-size: 36px; text-align: center;">Auctiongetto | Auction website for all materials!</h1>
+<h1 style="font-size: 36px; text-align: center;">Auctiongetto | Auction website for all materials!
+</h1>
 
-- ![amiresponsive](media/Screenshot 2024-05-07 111311.png)
+- ![amiresponsive](./media/Screenshot%202024-05-07_111311.png)
 
 <br>
   Welcome to Auctionghetto, Auctionghetto is an auction platform where potential users sample and sale their products. Our aim is
@@ -58,7 +59,8 @@
 
 
 ## User Stories
- * The user stories are readily available in the GitHub repository, neatly grouped into Epics for enhanced organization. This 
+ * The user stories are readily available in the GitHub repository, neatly grouped into Epics 
+   for enhanced organization. This 
    allows for easy tracking and management of project features. By organizing user stories into Epics, you can get a clear visual representation of the project's progress and understand the high-level goals and themes.
    ![user-story](./media/Screenshot%202024-05-07_091545.png)
    ![user-story](https://github.com/users/Madu-J/projects/14/views/1)
@@ -74,7 +76,7 @@
    When a user opens the auction page, they are required to log in first in order to bookmark their choice product and have the option to follow them. User won't be able to bookmark their own listed products. The navbar dynamically updates its links based on the user's state. For instance, if a user is logged in, they will see related to their account, such as auctioneer, follow, unfollow, and bookmark an item.
 
    Additionally, the navbar incorporates a search bar. This search functionality enables users to search among the various listings available on the site. By simply entering keywords or specific criteria into the search bar, users can quickly find relevant listings, making their browsing experience more efficient and tailored to their preferences.
-   ![Navbar](./media/Screenshot%2024-05-07_115940.png)
+   ![Navbar](./media/Screenshot%202024-05-07_115940.png)
 
 
 ## Auctionghetto Listings
@@ -96,14 +98,14 @@
 
   Provides listing information and key details about a particular auction item and the day of which trade will kick-start. 
   The listing also displays the price of the auction, helping users evaluate and offer their own bidding within their budget.
-  ![Auction Details](./media/Screenshot%2024-05-07_100922.png)
+  ![Auction Details](./media/Screenshot%202024-05-07_100922.png)
 
 
 ## Actions Detail page
 
 * The page includes these features on the Auctions Detail Page, enhancing the user experience by offering comprehensive 
   auctionghetto information and empowering post owners with control over their listings
-  ![Auction Detail](./media/Screenshot%2024-05-07_090622.png)
+  ![Auction Detail](./media/Screenshot%202024-05-07_090622.png)
   
 
 ## Auctions Edit page
@@ -124,28 +126,32 @@
   The auctioneer page allows sellers to create a visually appealing and informative presentation of their product. They can include high-quality images, and to engage users and convey their brand identity effectively.
 
   The auctioneer page serves as a critical component of the platform, enabling sellers to effectively market their auction products and increased visibility and locations for pick up.
-  ![Auctioneer Page](./media/Screenshot%2024-05-07_090707.png)
+  ![Auctioneer Page](./media/Screenshot%202024-05-07_090707.png)
 
 ## Edit Actioneer
 
-* Edit Auctioneer feature has been meticulously designed to facilitate sellers in effortlessly updating their 
+* Edit Auctioneer feature has been meticulously designed to facilitate sellers in 
+  effortlessly updating their 
   existing 
   information. It offers a user-friendly interface that empowers sellers to make modifications to their profiles with ease, guaranteeing the accuracy and up-to-date information.
 
-* This indispensable functionality enables users to preserve their relevancy in the market by consistently 
+* This indispensable functionality enables users to preserve their relevancy in the market by 
+  consistently 
   presenting the most 
   current and pertinent details about who they are and their products to potential customers.
   ![Edit Auction](media/)
 
 ## Feed Page
 
-* The Feed page displays collection of listed auctions, and tailored to the specific preferences of each user. This designed 
+* The Feed page displays collection of listed auctions, and tailored to the specific 
+  preferences of each user. This designed 
   feature presents a comprehensive display of various product listed by the auctioneers s whom the user follows.
 
-* Feed page serves as a convenient and centralized platform for users to stay constantly updated with the latest 
+* Feed page serves as a convenient and centralized platform for users to stay constantly 
+  updated with the latest 
   inventory from 
   their preferred sellers. This ensures that users never miss out on exciting auction opportunities and effortlessly provides them with a seamless browsing experience through a personalized selection of items that perfectly align with their unique interests and preference.
-  ![Feed Page](./media/Screenshot%2024-05-07_095856.png)
+  ![Feed Page](./media/Screenshot%202024-05-07_095856.png)
 
 ## Bookmark page
 
@@ -153,7 +159,8 @@
   convenient access 
   point to view all auction they have saved. This feature acts as a personalized collection, offering users a platform to effortlessly keep track of items that have captured their interest or that they intend to revisit later on.
 
-* This page enables users to effortlessly retrieve or review their preferred selections. Also allows users to make comparing and 
+* This page enables users to effortlessly retrieve or review their preferred selections. Also 
+  allows users to make comparing and 
   considering options, making it easier for them to make informed purchasing decisions.
 
 ## Future Features
@@ -209,7 +216,7 @@
 
 ## Remaining Bugs
 * 1
--![Images](./media/Screenshot%2024-05-07_121003.png)
+-![Images](./media/Screenshot%202024-05-07_121003.png)
 
 ## Deployment
 * To deploy the project, follow these steps:
