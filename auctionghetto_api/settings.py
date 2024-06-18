@@ -61,7 +61,8 @@ REST_AUTH_SERIALIZERS = {
 SECRET_KEY = 'django-insecure-y3*w3nee1uq@pcbfl1cergw#nl@g_j^#4jcp5jb$c_65^v(nkw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = "DEV" in os.environ
+# DEBUG = "DEV" in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost', 
@@ -110,10 +111,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-if 'CLIENT_ORIGIN' in os.environ:
-    CORS_ALLOWED_ORIGINS = [
-        os.environ.get('CLIENT_ORIGIN')
-    ]
+# if 'CLIENT_ORIGIN' in os.environ:
+#     CORS_ALLOWED_ORIGINS = [
+#         os.environ.get('CLIENT_ORIGIN')
+#     ]
 
 if 'CLIENT_ORIGIN_DEV' in os.environ:
     extracted_url = re.match(
