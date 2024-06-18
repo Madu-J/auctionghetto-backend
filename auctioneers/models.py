@@ -7,7 +7,9 @@ class Auctioneer(models.Model):
     """
     Model for user profile (Auctioneer) 
     """
-    owner = models.OneToOneField(User, on_delete=models.CASCADE, related_name='auctioneer')
+    owner = models.OneToOneField(
+        User, on_delete=models.CASCADE, related_name='auctioneer'
+    )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=60)
@@ -17,9 +19,10 @@ class Auctioneer(models.Model):
     street_address = models.CharField(max_length=40)
     city = models.CharField(max_length=40)
     description = models.TextField(blank=True)
-    image = models.ImageField(
-        upload_to='images/', default='../default_auctioneer_dwzcuabfl'
+    auctioneer_image = models.FileField(
+        null=True, blank=True, upload_to ="auctioneer_image"
     )
+
     class Meta:
         ordering = ["-created_at"]
 
