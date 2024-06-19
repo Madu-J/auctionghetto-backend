@@ -5,9 +5,9 @@ from bookmarks.models import Bookmark
 class AuctionsSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source="owner.username")
     is_owner = serializers.SerializerMethodField()
-    profile_id = serializers.ReadOnlyField(source="owner.profile.id")
-    profile_image = serializers.ReadOnlyField(
-        source="owner.profile.image.url"
+    auctioneer_id = serializers.ReadOnlyField(source="owner.auctioneer.id")
+    auctioneer_image = serializers.ReadOnlyField(
+        source="owner.auctioneer.image.url"
         )
     bookmark_id = serializers.SerializerMethodField()
 
