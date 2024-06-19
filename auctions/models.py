@@ -67,8 +67,8 @@ class Auctions(models.Model):
     description = models.TextField()
     year = models.PositiveIntegerField()
     price = models.FloatField()
-    auctioneer_image = models.FileField(
-        null=True, blank=True, upload_to ="auctioneer_image"
+    image = models.ImageField(
+        blank=True, upload_to ="_images/", default="auction_image_dwzcuabfl"
     )
     fueltype = models.CharField(
         max_length=32, choices=fueltype_choices, default="petrol"
