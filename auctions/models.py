@@ -52,23 +52,26 @@ class Auctions(models.Model):
     """
     Field model for categories of product.
     """
-    owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='auction')
+    owner = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='auction'
+        )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     title = models.CharField(max_length=20)
     categories = models.CharField(
-        max_length=30, choices=categories_choices)
+        max_length=30, choices=categories_choices, default='vehicle'
+    )
     items = models.CharField(
-        max_length=30, choices=items_choices, default='0')
-    auto = models.CharField(
-        max_length=30, choices=auto_choices, default='0')
-    auctionday = models.CharField(
-        max_length=30, choices=auctionday_choices, default='monday')
+        max_length=30, choices=items_choices, null=True)
+    auto = models.CharField(max_length=30, null=True)
+    auctionday = models.CharField( 
+        max_length=30, choices=auctionday_choices, default='monday'
+        )
     description = models.TextField()
     year = models.PositiveIntegerField()
     price = models.FloatField()
     image = models.ImageField(
-        upload_to='images/', default='../default_post_dwzcuabfl', blank=True
+        upload_to='images/', default='../default_auction_image'
     )
     fueltype = models.CharField(
         max_length=32, choices=fueltype_choices, default="petrol"

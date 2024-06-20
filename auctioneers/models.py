@@ -15,12 +15,12 @@ class Auctioneer(models.Model):
     name = models.CharField(max_length=60)
     email = models.CharField(max_length=60)
     phone = models.CharField(max_length=12)
-    postcode = models.CharField(max_length=6)
+    postcode = models.CharField(max_length=6, null=True)
     street_address = models.CharField(max_length=40)
     city = models.CharField(max_length=40)
-    description = models.TextField(blank=True)
-    auctioneer_image = models.FileField(
-        null=True, blank=True, upload_to ="auctioneer_image"
+    description = models.TextField(blank=True, null=True)
+    image = models.ImageField(
+        upload_to='images/', default='default.webp', blank=True
     )
 
     class Meta:
