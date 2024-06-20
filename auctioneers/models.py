@@ -20,7 +20,7 @@ class Auctioneer(models.Model):
     city = models.CharField(max_length=40)
     description = models.TextField(blank=True, null=True)
     image = models.ImageField(
-        upload_to='images/', default='default.webp', blank=True
+        upload_to='images/', default='../default_post_image'
     )
 
     class Meta:
