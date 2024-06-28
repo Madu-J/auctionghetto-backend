@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
-class Auctions(models.Model):
+class Auction(models.Model):
     """
     This model provides field to create, retrieve or update
     postings in database by user instance.
@@ -46,9 +46,7 @@ class Auctions(models.Model):
         ('thursday', 'Thursday'),
     ]
 
-    owner = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name='auction'
-        )
+    owner = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     title = models.CharField(max_length=20)
@@ -56,8 +54,8 @@ class Auctions(models.Model):
         max_length=30, choices=categories_choices, default='vehicle'
     )
     items = models.CharField(
-        max_length=30, choices=items_choices, null=True)
-    auto = models.CharField(max_length=30, null=True)
+        max_length=30, choices=items_choices, default='phones')
+    auto = models.CharField(max_length=30, default='other')
     auctionday = models.CharField( 
         max_length=30, choices=auctionday_choices, default='monday'
          )

@@ -2,17 +2,17 @@ from django.db.models import Count
 from rest_framework import generics, filters, permissions
 from django_filters.rest_framework import DjangoFilterBackend
 from auctionghetto_api.permissions import IsOwnerOrReadOnly
-from .models import Auctions
-from .serializers import AuctionsSerializer
+from .models import Auction
+from .serializers import AuctionSerializer
 
 
 class AuctionList(generics.ListCreateAPIView):
     """
     Auction list for logged in users.
     """
-    serializer_class = AuctionsSerializer
+    serializer_class = AuctionSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
-    queryset = Auctions.objects.all()
+    queryset = Auction.objects.all()
 
     filter_backends = [
         filters.SearchFilter,
@@ -20,7 +20,7 @@ class AuctionList(generics.ListCreateAPIView):
     ]
     filterset_fields = [
         "owner__followed",
-        "bookmark__owner",
+        "bookmarked__owner",
         "owner__auctioneer",
     ]
     search_fields = [
@@ -29,13 +29,13 @@ class AuctionList(generics.ListCreateAPIView):
     ]
 
     def perform_create(self, serializer):
-        serializer.save(owner=self.request.user)
+        serializer.bookmark(owner=self.request.user)
 
 
 class AuctionDetails(generics.RetrieveUpdateDestroyAPIView):
     """
     Detail view for user post, update or delete item.
     """
-    serializer_class = AuctionsSerializer
+    serializer_class = AuctionSerializer
     permission_classes = [IsOwnerOrReadOnly]
-    queryset = Auctions.objects.all()
+    queryset = Auction.objects.all()

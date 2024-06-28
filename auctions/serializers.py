@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from .models import Auctions
+from .models import Auction
 from bookmarks.models import Bookmark
 
-class AuctionsSerializer(serializers.ModelSerializer):
+class AuctionSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source="owner.username")
     is_owner = serializers.SerializerMethodField()
     auctioneer_id = serializers.ReadOnlyField(source="owner.auctioneer.id")
@@ -34,7 +34,7 @@ class AuctionsSerializer(serializers.ModelSerializer):
         user = self.context["request"].user
         if user.is_authenticated:
             bookmark = Bookmark.objects.filter(
-                owner=user, auctions=obj
+                owner=user, auction=obj
             ).first()
             return bookmark.id if bookmark else None
         return None
