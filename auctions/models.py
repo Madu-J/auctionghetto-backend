@@ -2,56 +2,50 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
-categories_choices = [
-    ('home', 'Home'),
-    ('office', 'Office'),
-    ('building', 'Building'),
-    ('vehicle', 'Vehicle'),
-    ('industry', 'Industry'),
-    ('agriculture', 'Agriculture'),
-]
-
-items_choices = [
-    ('furniture', 'Furniture'),
-    ('chair', 'Chair'),
-    ('table', 'Table'),
-    ('bicycle', 'Bicycle'),
-    ('bed', 'Bed'),
-    ('refrigerator', 'Refrigerator'),
-    ('pc', 'Pc'),
-    ('phones', 'Phones'),
-    ('other', 'Other'),
-]
-
-auto_choices = [
-    ('car', 'Car'),
-    ('minibus', 'Minibus'),
-    ('truck', 'Truck'),
-    ('bus', 'Bus'),
-    ('escavator', 'Escavator'),
-    ('motocycle', 'Motocycle'),
-    ('other', 'Other'),
-]
-
-fueltype_choices = [
-    ('petrol', 'Petrol'),
-    ('hybrid', 'Hybrid'),
-    ('diesel', 'Diesel'),
-    ('electric', 'Electric'),
-    ('other', 'Other'),
-]
-
-auctionday_choices = [
-    ('monday', 'Monday'),
-    ('tuesday', 'Tuesday'),
-    ('wednesday', 'Wednesday'),
-    ('thursday', 'Thursday'),
-]
-
 class Auctions(models.Model):
     """
-    Field model for categories of product.
+    This model provides field to create, retrieve or update
+    postings in database by user instance.
     """
+    
+    categories_choices = [
+        ('home', 'Home'),
+        ('office', 'Office'),
+        ('building', 'Building'),
+        ('vehicle', 'Vehicle'),
+        ('industry', 'Industry'),
+        ('agriculture', 'Agriculture'),
+    ]
+
+    items_choices = [
+        ('furniture', 'Furniture'),
+        ('chair', 'Chair'),
+        ('table', 'Table'),
+        ('bicycle', 'Bicycle'),
+        ('bed', 'Bed'),
+        ('refrigerator', 'Refrigerator'),
+        ('pc', 'Pc'),
+        ('phones', 'Phones'),
+        ('other', 'Other'),
+    ]
+
+    auto_choices = [
+        ('car', 'Car'),
+        ('minibus', 'Minibus'),
+        ('truck', 'Truck'),
+        ('bus', 'Bus'),
+        ('escavator', 'Escavator'),
+        ('motocycle', 'Motocycle'),
+        ('other', 'Other'),
+    ]
+
+    auctionday_choices = [
+        ('monday', 'Monday'),
+        ('tuesday', 'Tuesday'),
+        ('wednesday', 'Wednesday'),
+        ('thursday', 'Thursday'),
+    ]
+
     owner = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='auction'
         )
@@ -66,19 +60,15 @@ class Auctions(models.Model):
     auto = models.CharField(max_length=30, null=True)
     auctionday = models.CharField( 
         max_length=30, choices=auctionday_choices, default='monday'
-        )
+         )
     description = models.TextField()
     year = models.PositiveIntegerField()
     price = models.FloatField()
-    image = models.ImageField(
-        upload_to='images/', default='../default_post_image'
-    )
-    fueltype = models.CharField(
-        max_length=32, choices=fueltype_choices, default="petrol"
-    )
+    image = models.ImageField(upload_to="images/", default='post_image')
 
     class Meta:
-        ordering = ["-created_at"]
+         ordering = ["-created_at"]
 
     def __str__(self):
         return f"{self.id} {self.title}"
+    

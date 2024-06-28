@@ -19,20 +19,16 @@ class Auctioneer(models.Model):
     street_address = models.CharField(max_length=40)
     city = models.CharField(max_length=40)
     description = models.TextField(blank=True, null=True)
-    image = models.ImageField(
-        upload_to='images/', default='../default_post_image'
-    )
+    image = models.ImageField(upload_to="images/", default='post_image')
 
     class Meta:
         ordering = ["-created_at"]
 
     def __str__(self):
         return f"{self.owner}'s auctioneer"
-
-
-def create_auctioneer(sender, instance, created, **kwargs):
+        
+    def create_auctioneer(sender, instance, created, **kwargs):
         if created:
             Auctioneer.objects.create(owner=instance)
-
-
-post_save.connect(create_auctioneer, sender=User)
+            
+    post_save.connect(create_auctioneer, sender=User)
