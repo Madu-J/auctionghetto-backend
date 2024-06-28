@@ -40,5 +40,5 @@ class AuctionsSerializer(serializers.ModelSerializer):
         return None
 
     class Meta:
-        model = Auctions
+        model = Auction
         fields = "__all__"
