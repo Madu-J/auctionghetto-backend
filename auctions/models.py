@@ -15,9 +15,12 @@ class Auction(models.Model):
         ('vehicle', 'Vehicle'),
         ('industry', 'Industry'),
         ('agriculture', 'Agriculture'),
+        ('automobile', 'Automobile'),
+        ('sports','Sports'),
+        ('electronics', 'Electronics'),
     ]
 
-    items_choices = [
+    products_choices = [
         ('furniture', 'Furniture'),
         ('chair', 'Chair'),
         ('table', 'Table'),
@@ -26,10 +29,6 @@ class Auction(models.Model):
         ('refrigerator', 'Refrigerator'),
         ('pc', 'Pc'),
         ('phones', 'Phones'),
-        ('other', 'Other'),
-    ]
-
-    auto_choices = [
         ('car', 'Car'),
         ('minibus', 'Minibus'),
         ('truck', 'Truck'),
@@ -53,9 +52,8 @@ class Auction(models.Model):
     categories = models.CharField(
         max_length=30, choices=categories_choices, default='vehicle'
     )
-    items = models.CharField(
-        max_length=30, choices=items_choices, default='phones')
-    auto = models.CharField(max_length=30, default='other')
+    products = models.CharField(
+        max_length=30, choices=products_choices, default='phones')
     auctionday = models.CharField( 
         max_length=30, choices=auctionday_choices, default='monday'
          )
