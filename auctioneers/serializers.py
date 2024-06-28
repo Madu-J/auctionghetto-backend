@@ -23,10 +23,10 @@ class AuctioneerSerializer(serializers.ModelSerializer):
         if user.is_authenticated:
             following = Follower.objects.filter(
                 owner=user, followed=obj.owner
-            ).first()
+                ).first()
             return following.id if following else None
         return None
-
+        
     class Meta:
         model = Auctioneer
         fields = "__all__"
