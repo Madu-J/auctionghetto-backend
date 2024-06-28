@@ -252,6 +252,7 @@ allows users to make comparing and considering options, making it easier for the
 * Antonio Rodriquez - mentor
 
 ## Images
+* pexels.com/photo
 * Flaticom
 * Icon Packs
 * Vecteezy
