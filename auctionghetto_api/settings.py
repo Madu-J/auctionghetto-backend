@@ -68,7 +68,7 @@ ALLOWED_HOSTS = [
     'localhost', 
     'auctionghetto-api-17774afbeb21.herokuapp.com',
     '8000-maduj-auctionghettobac-3c7m7qoq92q.ws-eu111.gitpod.io',
-    '8000-maduj-auctionghettobac-ern4y3112wa.ws-eu114.gitpod.io'
+    '8000-maduj-auctionghettobac-s9g93kw3pmo.ws.codeinstitute-ide.net',
 ]
 
 
