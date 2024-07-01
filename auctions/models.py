@@ -60,7 +60,7 @@ class Auction(models.Model):
     description = models.TextField()
     year = models.PositiveIntegerField()
     price = models.FloatField()
-    image = models.ImageField(upload_to="images/", default='auction_image')
+    image = models.ImageField(upload_to="images/", default='../default_post_dwzcuabfl')
 
     class Meta:
          ordering = ["-created_at"]
