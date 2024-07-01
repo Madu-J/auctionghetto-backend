@@ -19,7 +19,7 @@ class Auctioneer(models.Model):
     street_address = models.CharField(max_length=40)
     city = models.CharField(max_length=40)
     description = models.TextField(blank=True, null=True)
-    image = models.ImageField(upload_to="images/", default='post_image')
+    image = models.ImageField(upload_to="images/", default='auctioneer_image')
 
     class Meta:
         ordering = ["-created_at"]
