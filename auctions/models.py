@@ -50,7 +50,7 @@ class Auction(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     title = models.CharField(max_length=20)
     categories = models.CharField(
-        max_length=30, choices=categories_choices, default='vehicle'
+        max_length=30, choices=categories_choices, default='home'
     )
     products = models.CharField(
         max_length=30, choices=products_choices, default='phones')
