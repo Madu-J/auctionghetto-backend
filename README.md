@@ -245,7 +245,7 @@ allows users to make comparing and considering options, making it easier for the
 ## Credit
 * React Bootstrap documentation and examples
 * CodeInstitute tutorial materials and tutors
-* Suzan Dewitz - github.com/SuzanDewitz/autotraderss
+* Suzan Dewitz - SuzanDewitz/autotraderss
 * Google search engine
 * SlackOverflow
 * Moments walkthrough project
@@ -256,5 +256,5 @@ allows users to make comparing and considering options, making it easier for the
 * Flaticom
 * Icon Packs
 * Vecteezy
-* Pingtree
+* Pingterest
 * The Noun Project
