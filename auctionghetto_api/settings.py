@@ -62,13 +62,13 @@ REST_AUTH_SERIALIZERS = {
 SECRET_KEY = 'django-insecure-y3*w3nee1uq@pcbfl1cergw#nl@g_j^#4jcp5jb$c_65^v(nkw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 #DEBUG = "DEV" in os.environ 
 
 ALLOWED_HOSTS = [
     'localhost', 
     'auctionghetto-api-17774afbeb21.herokuapp.com',
-    '8000-maduj-auctionghettobac-3c7m7qoq92q.ws-eu111.gitpod.io',
+    '8000-maduj-auctionghettobac-28d024pvhrj.ws-eu115.gitpod.io',
     '8000-maduj-auctionghettobac-s9g93kw3pmo.ws.codeinstitute-ide.net',
 ]
 
@@ -112,6 +112,17 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# if "CLIENT_ORIGIN" in os.environ:
+#    CORS_ALLOWED_ORIGINS = [os.environ.get("CLIENT_ORIGIN")]
+
+# if "CLIENT_ORIGIN_DEV" in os.environ:
+#    extracted_url = re.match(
+#        r"^.+-", os.environ.get("CLIENT_ORIGIN_DEV", ""), re.IGNORECASE
+#    ).group(0)
+#    CORS_ALLOWED_ORIGIN_REGEXES = [
+#        r"^https://.*\.codeinstitute-ide\.net$",
+#    ]
+
 if "CLIENT_ORIGIN" in os.environ:
     CORS_ALLOWED_ORIGINS = [os.environ.get("CLIENT_ORIGIN")]
 
@@ -120,7 +131,7 @@ if "CLIENT_ORIGIN_DEV" in os.environ:
         r"^.+-", os.environ.get("CLIENT_ORIGIN_DEV", ""), re.IGNORECASE
     ).group(0)
     CORS_ALLOWED_ORIGIN_REGEXES = [
-        r"^https://.*\.codeinstitute-ide\.net$",
+        rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$",
     ]
 
 CORS_ALLOW_CREDENTIALS = True
