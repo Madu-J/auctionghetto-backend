@@ -11,7 +11,7 @@ class Bookmark(models.Model):
     """
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     auction = models.ForeignKey(Auction, 
-    on_delete=models.CASCADE, default=None, related_name="bookmarked"
+    on_delete=models.CASCADE, default=None, related_name="bookmarks"
     )
     created_at = models.DateTimeField(auto_now_add=True)
 
