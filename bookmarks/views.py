@@ -13,7 +13,7 @@ class BookmarkList(generics.ListCreateAPIView):
     queryset = Bookmark.objects.all()
 
     def get_or_create(self, serializer):
-        serializer.bookmark(owner=self.request.user)
+        serializer.save(owner=self.request.user)
 
 
 class BookmarkDetails(generics.RetrieveDestroyAPIView):

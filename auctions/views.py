@@ -19,17 +19,17 @@ class AuctionList(generics.ListCreateAPIView):
         DjangoFilterBackend,
     ]
     filterset_fields = [
-        "owner__followed",
-        "bookmarked__owner",
+        "owner__followed__owner__auctioneer",
+        "bookmarks__owner__auctioneer",
         "owner__auctioneer",
     ]
     search_fields = [
+         "title",
         "owner__username",
-        "title",
     ]
 
     def perform_create(self, serializer):
-        serializer.bookmark(owner=self.request.user)
+        serializer.save(owner=self.request.user)
 
 
 class AuctionDetails(generics.RetrieveUpdateDestroyAPIView):
