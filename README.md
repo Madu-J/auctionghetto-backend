@@ -1,7 +1,7 @@
 <h1 style="font-size: 36px; text-align: center;">Auctiongetto | Auction website for all materials!
 </h1>
 
-- ![amiresponsive](./static/Screenshot%202024-05-07_111311.png)
+ - ![amiresponsive](./static/Screenshot%202024-05-07_111311.png)
 
 <br>
   Welcome to Auctionghetto, Auctionghetto is an auction platform where potential users sample and sale their products. Our aim is
@@ -14,61 +14,61 @@
   You can personalize your choice product as a registered user, you can conveniently bookmark your choice product for a revisit. This feature allows you make an informed decision after you might have compared several other items before buying.
 <br>
 
-- ![auctionghetto-live app](https://auctionghetto-65bba3a96be0.herokuapp.com/)
+ - ![auctionghetto-live app](https://auctionghetto-65bba3a96be0.herokuapp.com/)
  
- * Follow the link for Backend & Frontend repository of Auctionghetto project.
- - ![auctionghetto-backend](/https://github.com/Madu-J/auctionghetto-backend)
- - ![auctionghetto-frontend](https://github.com/Madu-J/auctionghetto-frontend)
+  * Follow the link for Backend & Frontend repository of Auctionghetto project.
+  - ![auctionghetto-backend](/https://github.com/Madu-J/auctionghetto-backend)
+  - ![auctionghetto-frontend](https://github.com/Madu-J/auctionghetto-frontend)
 
 
 ## Table of Contents
- - + [User Experience (UX)](#user-experience-ux)
+  - + [User Experience (UX)](#user-experience-ux)
 
-  - [User Stories](#user-stories)
+   - [User Stories](#user-stories)
 
-  - [Design](#design)
+   - [Design](#design)
 
-+ [Future](#future)
-     - [Future Features](#future-features)
-     - [Bugs](#bugs)
-     - [Fixed Bugs](#fixed-bugs)
-     - [Remaining Bugs](#remaining-bugs)
-- [Technologies Used](#technologies-used)
-     - [Languages and Frameworks Used](#languages-and-frameworks-used)
-     - [Python Modules Used](#python-modules-used)
-     - [Packages Used](#packages-used)
-     - [Programs and Tools Used](#programs-and-tools-used)
-- [Deployment](#deployment)
-    - [Deploying to GitHub](#deploying-to-github)
-    - [Deploying with Heroku](#deploying-with-heroku)
-- [Credits](#credits)
-     - [Credit](#credit)
-     - [Media](#media)
+ + [Future](#future)
+      - [Future Features](#future-features)
+      - [Bugs](#bugs)
+      - [Fixed Bugs](#fixed-bugs)
+      - [Remaining Bugs](#remaining-bugs)
+ - [Technologies Used](#technologies-used)
+      - [Languages and Frameworks Used](#languages-and-frameworks-used)
+      - [Python Modules Used](#python-modules-used)
+      - [Packages Used](#packages-used)
+      - [Programs and Tools Used](#programs-and-tools-used)
+ - [Deployment](#deployment)
+     - [Deploying to GitHub](#deploying-to-github)
+     - [Deploying with Heroku](#deploying-with-heroku)
+ - [Credits](#credits)
+      - [Credit](#credit)
+      - [Media](#media)
     
 
 ## User Experience (UX)
-- Welcome to Auctionghetto, Auctionghetto is an auction platform where potential user sample and sale their products. Our aim is to provide a community friendly platform for both buyers and salers looking to buy or sell their items.
+ - Welcome to Auctionghetto, Auctionghetto is an auction platform where potential user sample and sale their products. Our aim is to provide a community friendly platform for both buyers and salers looking to buy or sell their items.
 
-# Following features are available in our site
-- In Auctionghetto we offer a user-friendly interface that allows sellers to effortlessly create captivating listings. Our intuitive posting system ensures that sellers can showcase their auctions with compelling descriptions and high-quality images.
+ # Following features are available in our site
+ - In Auctionghetto we offer a user-friendly interface that allows sellers to effortlessly create captivating listings. Our intuitive posting system ensures that sellers can showcase their auctions with compelling descriptions and high-quality images.
 
-- Advanced Search Functionality: Find your choice product with our advanced search filters. You can refine your search based on specific criteria, eg.. product name, categories, year and so on. 
+ b- Advanced Search Functionality: Find your choice product with our advanced search filter. You can refine your search based on specific criteria, eg.. product name, categories, year and so on. 
 
-- You can personalize your choice product as a registered user, you can conveniently bookmark your choice product for a revisit. This feature allows you make an informed decision after you might have compared several other items before buying.
+ b- You can personalize your choice product as a registered user, you can conveniently bookmark your choice product for a revisit. This feature allows you make an informed decision after you might have compared several other items before buying.
 
 
 ## User Stories
  * The user stories are readily available in the GitHub repository, neatly grouped into Epics 
    for enhanced organization. This 
    allows for easy tracking and management of project features. By organizing user stories into Epics, you can get a clear visual representation of the project's progress and understand the high-level goals and themes.
-   ![user-story](./static/Screenshot%202024-05-07_091545.png)
+   ![user-story](./media/auctionghetto.png)
    ![user-story](https://github.com/users/Madu-J/projects/14/views/1)
 
-  # Agile methodology
+ # Agile methodology
   - During the project development, I embraced an Agile Methodology, leveraging the powerful capabilities of GitHub Projects to create User Stories.
 
 ## Features
-# Navbar & Search
+ # Navbar & Search
    The navbar allow users to explore different sections and easily navigate throughout the site pages of the website conveniently. Whether it's accessing specific categories, browsing through listings, or accessing account-related information, the navbar provides a streamlined way to navigate the site.
 
    When a user opens the auction page, they are required to log in first in order to bookmark their choice product and have the option to follow them. User won't be able to bookmark their own listed products. The navbar dynamically updates its links based on the user's state. For instance, if a user is logged in, they will see related to their account, such as auctioneer, follow, unfollow, and bookmark an item.
@@ -78,124 +78,131 @@
 
 
 ## Auctionghetto Listings
-* The auction listing section comprehensively displays a collection of available auctions on trade or to be traded. It serves as a centralized platform for users to browse and explore various auctions that are currently on the market. By aggregating a wide range of auctionghetto listings, it offers convenience and ease of access for potential buyers or interested individuals looking to explore different options.
+ * The auction listing section comprehensively displays a collection of available auctions on trade or to be traded. It serves as a centralized platform for users to browse and explore various auctions that are currently on the market. By aggregating a wide range of auctionghetto listings, it offers convenience and ease of access for potential buyers or interested individuals looking to explore different options.
 
-- Each auctionghetto listing within the platform provides vital information to assist users in making informed decisions. This information typically includes essential details about any auction, such as:
+ - Each auctionghetto listing within the platform provides vital information to assist users in making informed decisions. This information typically includes essential details about any auction, such as:
 
-- Provides listing information and key details about a particular auction item and the day of which trade will kick-start. 
-The listing also displays the price of the auction, helping users evaluate and offer their own bidding within their budget.
-![Auctionghetto Listing](./static/)
+ - Provides listing information and key details about a particular auction item and the day of which trade will kick-start. 
+ The listing also displays the price of the auction, helping users evaluate and offer their own bidding within their budget.
+ ![Auctionghetto Listing](./static/)
 
 ## Action Details page
-* The auction listing section comprehensively displays a collection of available auctions on trade or to be traded. It serves as a centralized platform for users to browse and explore various auctions that are currently on the market. By aggregating a wide range of auctionghetto listings, it offers convenience and ease of access for potential buyers or interested individuals looking to explore different options.
+ * The auction listing section comprehensively displays a collection of available auctions on trade or to be traded. It serves as a centralized platform for users to browse and explore various auctions that are currently on the market. By aggregating a wide range of auctionghetto listings, it offers convenience and ease of access for potential buyers or interested individuals looking to explore different options.
 
-Each auctionghetto listing within the platform provides vital information to assist users in making informed decisions. This information typically includes essential details about any auction, such as:
+ Each auctionghetto listing within the platform provides vital information to assist users in making informed decisions. This information typically includes essential details about any auction, such as:
 
-Provides listing information and key details about a particular auction item and the day of which trade will kick-start. 
-The listing also displays the price of the auction, helping users evaluate and offer their own bidding within their budget.
-![Auction Details](./static/Screenshot%202024-05-07_100922.png)
+ Provides listing information and key details about a particular auction item and the day of which trade will kick-start. 
+ The listing also displays the price of the auction, helping users evaluate and offer their own bidding within their budget.
+ ![Auction Details](./static/Screenshot%202024-05-07_100922.png)
 
 
 ## Actions Detail page
 
-* The page includes these features on the Auctions Detail Page, enhancing the user experience 
-by offering comprehensive auctionghetto information and empowering post owners with control over their listings
-![Auction Detail](./static/Screenshot%202024-05-07_090622.png)
+ * The page includes these features on the Auctions Detail Page, enhancing the user experience 
+ by offering comprehensive auctionghetto information and empowering post owners with control over their listings
+ ![Auction Detail](./static/Screenshot%202024-05-07_090622.png)
   
 
 ## Auctions Edit page
-* The Auctions Edit page is a dedicated page that allows users to update an existing 
-posts, which provides a convenient and user-friendly interface for modifying details information associated with a particular listing.
-Updating Auctionghetto Post: On the Auctions Edit page, users can make changes and updates to an existing auction post. This includes modifying various aspects of listing on the website, such as:
-- Editable Fields: Users can update fields such as the price of each auction item, description, technical specifications, features, condition, contact information, and any other relevant details associated with the auction.
 
-- Uploading New Images: Users may also have the option to upload new images or replace existing auction item to provide a potential buyer with clearer picture of auction item.
+ * The Auctions Edit page is a dedicated page that allows users to update an existing 
+ posts, which provides a convenient and user-friendly interface for modifying details information associated with a particular listing.
+ bUpdating Auctionghetto Post: On the Auctions Edit page, users can make changes and updates to an existing auction post. This includes modifying various aspects of listing on the website, such as:
+ - Editable Fields: Users can update fields such as the price of each auction item, description, technical specifications, features, condition, contact information, and any other relevant details associated with the auction.
 
-- Correcting Information and saving changes: If there were any inaccuracies or mistakes in the original auctionghetto post, the Auctions Edit page allows users to correct and update the information, ensuring that the listing provides accurate and reliable details.
-![Auction Edit Page](./static/)
+ - Uploading New Images: Users may also have the option to upload new images or replace existing auction item to provide a potential buyer with clearer picture of auction item.
+
+ - Correcting Information and saving changes: If there were any inaccuracies or mistakes in the original auctionghetto post, the Auctions Edit page allows users to correct and update the information, ensuring that the listing provides accurate and reliable details.
+ ![Auction Edit Page](./static/)
 
 ## Auctioneer page
 
-* The (Auctioneer page) a profile page plays a vital role in providing sellers with a valuable opportunity to showcase their company effectively. It serves as a dedicated platform where sellers can present their company in a comprehensive and compelling manner to users.
+ * The (Auctioneer page) a profile page plays a vital role in providing sellers with a valuable opportunity to showcase their company effectively. It serves as a dedicated platform where sellers can present their company in a comprehensive and compelling manner to users.
 
-The auctioneer page allows sellers to create a visually appealing and informative presentation of their product. They can include high-quality images, and to engage users and convey their brand identity effectively.
+ The auctioneer page allows sellers to create a visually appealing and informative presentation of their product. They can include high-quality images, and to engage users and convey their brand identity effectively.
 
-The auctioneer page serves as a critical component of the platform, enabling sellers to effectively market their auction products and increased visibility and locations for pick up.
-![Auctioneer Page](./static/Screenshot%202024-05-07_090707.png)
+ The auctioneer page serves as a critical component of the platform, enabling sellers to effectively market their auction products and increased visibility and locations for pick up.
+ ![Auctioneer Page](./static/Screenshot%202024-05-07_090707.png)
 
 ## Edit Actioneer
 
-* Edit Auctioneer feature has been meticulously designed to facilitate sellers in effortlessly updating their existing information. It offers a user-friendly interface that empowers sellers to make modifications to their profiles with ease, guaranteeing the accuracy and up-to-date information.
+ * Edit Auctioneer feature has been meticulously designed to facilitate sellers in effortlessly updating their existing information. It offers a user-friendly interface that empowers sellers to make modifications to their profiles with ease, guaranteeing the accuracy and up-to-date information.
 
-* This indispensable functionality enables users to preserve their relevancy in the market by 
-consistently presenting the most current and pertinent details about who they are and their products to potential customers.
-![Edit Auction](./static/)
+ * This indispensable functionality enables users to preserve their relevancy in the market by 
+ consistently presenting the most current and pertinent details about who they are and their products to potential customers.
+ ![Edit Auction](./static/)
 
 ## Feed Page
 
-* The Feed page displays collection of listed auctions, and tailored to the specific preferences of each user. This designed feature presents a comprehensive display of various product listed by the auctioneers s whom the user follows.
+ * The Feed page displays collection of listed auctions, and tailored to the specific preferences of each user. This designed feature presents a comprehensive display of various product listed by the auctioneers s whom the user follows.
 
-* Feed page serves as a convenient and centralized platform for users to stay constantly 
-updated with the latest inventory from their preferred sellers. This ensures that users never miss out on exciting auction opportunities and effortlessly provides them with a seamless browsing experience through a personalized selection of items that perfectly align with their unique interests and preference.
-![Feed Page](./static/Screenshot%202024-05-07_095856.png)
+ * Feed page serves as a convenient and centralized platform for users to stay constantly updated with the latest inventory from their preferred sellers. This ensures that users never miss out on exciting auction opportunities and effortlessly provides them with a seamless browsing experience through a personalized selection of items that perfectly align with their unique interests and preference.
+ ![Feed Page](./static/Screenshot%202024-05-07_095856.png)
 
 ## Bookmark page
 
-* The Bookmark page serves as a meticulously designed and dedicated space, providing users with a seamless and convenient access point to view all auction they have saved. This feature acts as a personalized collection, offering users a platform to effortlessly keep track of items that have captured their interest or that they intend to revisit later on.
+ * The Bookmark page serves as a meticulously designed and dedicated space, providing users with a seamless and convenient access point to view all auction they have saved. This feature acts as a personalized collection, offering users a platform to effortlessly keep track of items that have captured their interest or that they intend to revisit later on.
 
-* This page enables users to effortlessly retrieve or review their preferred selections. Also 
-allows users to make comparing and considering options, making it easier for them to make informed purchasing decisions.
+ * This page enables users to effortlessly retrieve or review their preferred selections. Also 
+ allows users to make comparing and considering options, making it easier for them to make informed purchasing decisions.
 
 ## Future Features
 
-* Payment System: Adding payment feature that will allow users make payment online in a situation where a potential buyer would prefer to pay online via Auctionghetto website.
+ * Payment System: Adding payment feature that will allow users make payment online in a situation where a potential buyer would prefer to pay online via Auctionghetto website.
 
-* Rating System: To add a rating system that enables buyers to rate their experiences with the auctioneers, as providing valuable feedback help build trust within users to the website and new users.
+ * Rating System: To add a rating system that enables buyers to rate their experiences with the auctioneers, as providing valuable feedback help build trust within users to the website and new users.
 
-* Gallery: Integrate an image gallery with feature that allows load of more pictures to enable users upload multiple pictures of their products and give a potential buyer clearer picture of item he or she is looking for and make a profitable bargain in the process.
+ * Gallery: Integrate an image gallery with feature that allows load of more pictures to enable users upload multiple pictures of their products and give a potential buyer clearer picture of item he or she is looking for and make a profitable bargain in the process.
 
 ## Technologies Used
 
-* Languages, JavaScript, HTML5 and CSS3
+ * Django: Django
+ * Python: Python
+ * Django 3.2.19
+ * Django Rest Framework 3.15.1
 
-* Frameworks, Libraries & Programs Used
+ # Frameworks, Libraries & Programs Used
 
-* React - Front-end JavaScript library for building user interfaces based on UI components.
+ * Dj-rest-auth Authentication - dj-rest-auth is a Django Rest Framework (DRF) extension offers API help for handling all authentication related processes to DRF-based projects, such as user registration, login, logout and password reset.
 
-* React Bootstrap - Component-based library that provides native Bootstrap components as pure React components.
+ * Django-allauth - is a Django package that provides a set of views, templates, and helper functions to handle user authentication, registration, and account management.
 
-* Axios - Promise-based HTTP client for the browser and Node.js. Used to make HTTP requests from throughout the application.
+ * Dj-database-url - This package allows the use of the 'DATABASE_URL' environmental variable in the Django project. It can contain information such as where to search for the database.
 
-* jwt-decode - Used to decode and extract information from a JWT token.
+ * Cloudinary - This package offers tremendous capabilities for managing your online media. It's functionalities includes storing, manipulating and delivering images and videos 
 
-* react-router-dom - Routing library for the React JavaScript library. Used to display different components based on the URL entered in the browser.
+ * Django-cloudinary-storage - This package extends Django's default file adn storage system. It allows to easily store and retrieve files within Django applications and Cloudinary accounts.
 
-* drawSQL - Tool used to create Database Schema/ERD.
+ * Pillow - This package is a fork of the Python Imaging Library (PIL). It is a free and open-source library for manipulating and processing images.
 
-* Git: Version control system used for tracking changes in the source code, with commits and pushes made using the terminal.
+ * Django-filter - Django-filter is a generic, reusable application to alleviate writing some of the more mundane bits of view code. It allows users to filter down a queryset based on a model's fields by displaying them.
 
-* GitHub: Platform used to store the project's code after being pushed from Git.
+ * Django-cors-headers - A Django App that adds Cross-Origin Resource Sharing (CORS) headers to responses. This allows in-browser requests to your Django application from other origins.
 
-* The following modules were installed or enabled in Gitpod to assist with formatting and code linting:
-* ESLint - A code linter that identifies and reports patterns or coding errors in thecodebase.
+ * Djangorestframework-simplejwt - Simple JWT provides a JSON Web Token authentication backend for the Django REST Framework. It aims to provide an out-of-the-box solution for JWT authentication which avoids some of the common pitfalls of the JWT specification.
 
-* Prettier: An opinionated code formatter that helps maintain consistent code style across the project.
+ * Gunicorn - Gunicorn is a pure-Python HTTP server for WSGI applications. It allows you run multiple Python processes within a single dyno. It provides a perfect balance of performance, flexibility, and configuration simplicity.
+
+ * Psycopg2 - Psycopg2 is the most popular PostgreSQL database adapter for the Python programming language. It allows Django to connect and interact with PostgreSQL databases, enabling retrieve data and storage.
+
 
 ## Testing
-* A separate document for testing can be found here.
+ * A separate document for testing can be found here.
 
 ## Bugs
-* Fixed Bugs
-- Avatar
-- Image
+ * Fixed Bugs
+ - Avatar
+ - Image
   I am having issues with images.
 
 ## Remaining Bugs
-* 1
--![Images](./static/Screenshot%202024-05-07_121003.png)
+
+ * 1
+ -![Images](./static/Screenshot%202024-05-07_121003.png)
 
 ## Deployment
-* To deploy the project, follow these steps:
+
+ * To deploy the project, follow these steps:
 
 *  Forking the GitHub Repository
 
@@ -242,18 +249,18 @@ allows users to make comparing and considering options, making it easier for the
 - Finally, you should see the "View" button. Click on it to open your deployed application.
 
 ## Credit
-* React Bootstrap documentation and examples
-* CodeInstitute tutorial materials and tutors
-* Suzan Dewitz - SuzanDewitz/autotraderss
-* Google search engine
-* SlackOverflow
-* Moments walkthrough project
-* Antonio Rodriquez - mentor
+ * React Bootstrap documentation and examples
+ * CodeInstitute tutorial materials and tutors
+ * Suzan Dewitz - SuzanDewitz/autotraderss
+ * Google search engine
+ * SlackOverflow
+ * Moments walkthrough project
+ * Antonio Rodriquez - mentor
 
 ## Images
-* pexels.com/photo
-* Flaticom
-* Icon Packs
-* Vecteezy
-* Pingterest
-* The Noun Project
+ * pexels.com/photo
+ * Flaticom
+ * Icon Packs
+ * Vecteezy
+ * Pingterest
+ * The Noun Project
