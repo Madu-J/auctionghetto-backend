@@ -80,41 +80,25 @@
 
   - During the project development, I embraced an Agile Methodology, leveraging the powerful capabilities of GitHub Projects to create User Stories.
 
+
 ## Features
- 
- # Database schedule and response or feature breakdown for Auctionghetto's app.
 
- * Auction: auction_i----auction_name----location----contact_info.
- 
- - The "auction_id" column presents a unique identifier for each auction or product. The "auction_name" column stores the name of auctioneer. The "location" column represents the location of each auction. The "contact_info" column stores the contact information for the auctioneer.
- 
- * User: user_id=username----email----password----registration_date----product_id.
 
- - The "user_id" column represents a unique identifier for each user entry. The "username" column stores the username of the user. The "email" column represents the email address associated with the user. The "password" column stores the password (hashed or encrypted) for user authentication. Prodoct column stores the item or product associated to each user.
-
- * Auctionghetto feed: feed_id----auction_id----post_content----post_date.
-
- - The feed_id: This column has a unique identifier for each feed post and each with different "feed_id" value, allowing you to uniquely identify and reference every feed post.
- The auction_id: This column stores the auction to identify and associate with each feed post. It represents the auctioneer who is responsible for creating or posting, also allows for multiple feed posts, and the "auction_id" helps establish the relationship between the auction and their respective feed posts.
-
- * The Bookmark app: bookmarks_id----user_id----auction_id----date_created.
+ * The Bookmark app: 
 
  - The Bookmarks serves as a meticulously designed and dedicated space, providing users with a seamless and convenient access point to view all auction they have saved. This feature acts as a personalized collection, offering users a platform to effortlessly keep track of items that have captured their interest or that they intend to revisit later on.
- ![Bookmarks](./static/Screenshot%202024-05-07_095856.png)
+ ![Bookmarks](media/bookmark.png)
 
- * Followers app: follower_id----userid----autotrader_id.
+ * Followers app:
 
- - The "Followers" relationship and auctionghetto users,  signifies a follower relationship, where a user follows an another user
-  The "follower_id" column represents a unique identifier for each follower relationship entry.
-  The "user_id" column represents the identifier of the user who is following a certain auctioneer.
-* ![]()
- - Row 1 indicates that the user with user_id 1 is following the auctioneer with auction _id 2.
- - Row 2 indicates that the user with user_id 3 is following the auctioneer with auction _id 1.
+ - The "Followers" relationship and auctionghetto users in this context indentifies 2 users in row 1 is following auctioneer with auction_id 3.
+   Row 2 simply informs that the user 1 with user_id 1 is following the auctioneer with auction _id 2.
+   ![followers_table](media/Followers.png)
 
 
  * Database schedule
   
-  ![]()
+  ![data_structure](media/data_str.jpg)
 
 
 ## Future Features
@@ -124,8 +108,8 @@
 
 ## Technologies Used
 
- * Django: Django
  * Python: Python
+ * Django: Django
  * Django 3.2.19
  * Django Rest Framework 3.15.1
 
