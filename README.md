@@ -1,8 +1,6 @@
 <h1 style="font-size: 36px; text-align: center;">Auctiongetto API
 </h1>
 
- - ![amiresponsive](./static/Screenshot%202024-05-07_111311.png)
-
 <br>
   Welcome to Auctionghetto server ! In Auctionghetto platform we priotize our customer's interest. Auctionghetto is built on a powerful toolkit using Django REST framework. This Auctionghetto backend is smoothly interacts with frontend side of Auctionghetto Application Programming Interfaces, when the API sends a request to the server, then the server sends a response back to the clients.
   
@@ -167,9 +165,8 @@
 
 ## Bugs
  * Fixed Bugs
- - Avatar
- - Image
-  I am having issues with images.
+ - Image - had issues with images path and config.
+ - Bookmarkserializer - a typo error caused malfunction.
 
 ## Remaining Bugs
 
