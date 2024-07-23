@@ -45,14 +45,16 @@ if "DEV" not in os.environ:
         "rest_framework.renderers.JSONRenderer",
     ]
 
-REST_USE_JWT =True
+
+REST_USE_JWT = True
 JWT_AUTH_SECURE = True
 JWT_AUTH_COOKIE = 'my-app-auth'
 JWT_AUTH_REFRESH_COOKIE = 'my-refresh-token'
 JWT_AUTH_SAMESITE = "None"
 
 REST_AUTH_SERIALIZERS = {
-    'USER_DETAILS_SERIALIZER': 'auctionghetto_api.serializers.CurrentUserSerializer'
+    'USER_DETAILS_SERIALIZER':
+    'auctionghetto_api.serializers.CurrentUserSerializer'
 }
 
 # Quick-start development settings - unsuitable for production
@@ -62,11 +64,11 @@ REST_AUTH_SERIALIZERS = {
 SECRET_KEY = 'django-insecure-y3*w3nee1uq@pcbfl1cergw#nl@g_j^#4jcp5jb$c_65^v(nkw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
-DEBUG = "DEV" in os.environ 
+# DEBUG = True
+DEBUG = "DEV" in os.environ
 
 ALLOWED_HOSTS = [
-    'localhost', 
+    'localhost',
     'auctionghetto-api-17774afbeb21.herokuapp.com',
     '8000-maduj-auctionghettobac-28d024pvhrj.ws-eu115.gitpod.io',
     '8000-maduj-auctionghettobac-s9g93kw3pmo.ws.codeinstitute-ide.net',
@@ -159,7 +161,7 @@ if "DEV" in os.environ:
     }
 else:
     DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+        'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
     }
 
 # Password validation
@@ -167,16 +169,20 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
 
