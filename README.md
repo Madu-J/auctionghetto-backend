@@ -71,7 +71,7 @@
  - As a User, I want to be able to edit my profile (Auctioneer) on Auctionghetto, so that I can update or change my information.
 
  * To view more User Story, the user stories are available in the GitHub repository.
-   ![user-story](./media/auctionghetto.png)
+   ![user-story](media/user_st.png)
    ![user-story](https://github.com/users/Madu-J/projects/14/views/1)
 
  # Agile methodology
@@ -122,7 +122,8 @@
 ## Future Features
 
  * Payment System: Adding payment feature that will allow users make payment online in a situation where a potential buyer would prefer to pay online via Auctionghetto website.
-
+ 
+ * Future feature will include bidders app and serializer, this will help enhance user experience, so that auctionghetto user or auctioneer can view the highest bidder.
 
 ## Technologies Used
 
