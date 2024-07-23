@@ -10,18 +10,20 @@
 
 <br>
 
- - ![auctionghetto-live app](https://auctionghetto-65bba3a96be0.herokuapp.com/)
+ - ![auctionghetto-live app](https://auctionghetto-65bba3a96be0.herokuapp.com)
  
   * Follow the link for Backend & Frontend repository of Auctionghetto project.
-  - ![auctionghetto-backend](/https://github.com/Madu-J/auctionghetto-backend)
+  - ![auctionghetto-backend](https://github.com/Madu-J/auctionghetto-backend)
   - ![auctionghetto-frontend](https://github.com/Madu-J/auctionghetto-frontend)
 
 
 ## Table of Contents
 
-  - + [User Experience (UX)](#user-experience-ux)
+  + [User Experience (UX)](#user-experience-ux)
 
    - [User Stories](#user-stories)
+
+   - [Project Administration](#project_administration)
 
    - [Design](#design)
 
@@ -49,7 +51,7 @@
 
  # Following features are available in our site
 
-  - In Auctionghetto we offer a user-friendly interface that allows sellers to effortlessly create captivating listings. Our intuitive posting system ensures that sellers can showcase their auctions with compelling descriptions and high-quality images. 
+ - In Auctionghetto we offer a user-friendly interface that allows sellers to effortlessly create captivating listings. Our intuitive posting system ensures that sellers can showcase their auctions with compelling descriptions and high-quality images. 
 
  - You can personalize your choice product as a registered user, you can conveniently bookmark your choice product for a revisit. 
   This feature allows you make an informed decision after you might have compared several other items before buying.
@@ -71,13 +73,43 @@
  - As a User, I want to be able to edit my profile (Auctioneer) on Auctionghetto, so that I can update or change my information.
 
  * To view more User Story, the user stories are available in the GitHub repository.
-   ![user-story](media/user_st.png)
-   ![user-story](https://github.com/users/Madu-J/projects/14/views/1)
+ - ![user-story](media/user_st.png)
+ - ![user-story](https://github.com/users/Madu-J/projects/14/views/1)
 
  # Agile methodology
 
-  - During the project development, I embraced an Agile Methodology, leveraging the powerful capabilities of GitHub Projects to create User Stories.
+ - During the project development, I embraced an Agile Methodology, leveraging the powerful capabilities of GitHub Projects to create User Stories.
 
+## Project Administration
+
+ # Administrative Tasks
+
+ - User management
+ - Access control and permissions
+ - Database backups and maintenance
+ - System monitoring and logging
+
+ * Procedures
+
+ * User Management
+
+ - Creating new user accounts
+ - Managing user roles and permissions
+ - Disabling or deleting user accounts
+
+ * Database Backups
+
+ - Performing regular database backups
+ - Storing backups in a secure location
+ - Testing the restoration process
+
+ * System Monitoring
+
+ - Monitoring system performance
+ - Analyzing logs for errors or issues
+ - Responding to system alerts
+ - ![auction_listpanel](media/auctionL.png)
+ - ![auctioneer_listpanel](media/auctioneerL.png)
 
 ## Features
 
@@ -86,38 +118,34 @@
  * Auction
 
  - The "auction_id" column presents is uniquely identifies each auction or product. The "auction_name" column stores the name of auctioneer. The "location" column represents the location of each auction. The "contact_info" column stores the contact information for the auction.
- ![auction_table](media/auctiont.png)
+ - ![auction_table](media/auctiont.png)
 
  * Feeds
 
  - The feed_id: This column has a unique identifier for each feed post and each with different "feed_id" value, allowing you to uniquely identify and reference every feed post.
  The auction_id: This column stores the auction to identify and associate with each feed post. It represents the auctioneer who is responsible for creating or posting, also allows for multiple feed posts, and the "auction_id" helps establish the relationship between the auction and their respective feed posts.
- ![feed_table](media/feedt.png)
+ - ![feed_table](media/feedt.png)
 
  - Users
 
  - The "user_id" column represents a unique identifier for each user entry. The "username" column stores the username of the user. The "email" column represents the email address associated with the user. The "password" column stores the password (hashed or encrypted) for user authentication. Prodoct column stores the item or product associated to each user.
- ![user_tabe](media/usert.png)
+ - ![user_tabe](media/usert.png)
 
- * The Bookmark app: 
+ * Bookmarks 
 
- - The Bookmarks serves as a meticulously designed and dedicated space, providing users with a seamless and convenient access point to view all auction they have saved. This feature acts as a personalized collection, offering users a platform to effortlessly keep track of items that have captured their interest or that they intend to revisit later on.
- ![bookmark_data](media/bookmark.png)
+ - The "bookmarks_id" column represents a unique identifier for each saved entry. The "user_id" column corresponds to the user who saved the entry, and the "auction_id" column corresponds to the auction being saved. The "date_created" column represents the date when the entry was saved.
+ - ![bookmark_table](media/bookmarkt.png)
 
- - The "bookmarks_id" column represents a unique identifier for each saved entry. The "user_id" column corresponds to the user who saved the entry, and the "auction_id" column corresponds to the auction being saved. The "date_created" column represents the date when the entry was saved
- ![bookmark_table](media/bookmarkt.png)
+ * Followers
 
- * Followers app:
+ - The "Followers" relationship and auctionghetto users in this context points that:
+  + Row 1 informs that the user with user_id 2 is following the auctioneer with auction_id 3. This table allows to establish and track the followership relationship between users.
+  Row 2 is pointing that the user with user_id 3 is following the auctioneer with auction _id 1.
+  As row 3 is pointing that the user with user_id 1 is following the auctioneer with auction_id 2.
+ - ![followers_table](media/followert.png)
 
- - The "Followers" relationship and auctionghetto users in this context indentifies 2 users in row 1 is following auctioneer with
- auction_id 3.
- Row 2 simply informs that the user 1 with user_id 1 is following the auctioneer with auction _id 2.
- ![followers_table](media/Followers.png)
-
-
- - Database schedule
-  ![data_table](media/data_str.jpg)
-
+ * Data structure
+ - ![data_table](media/data_str.jpg)
 
 ## Future Features
 
@@ -162,17 +190,19 @@
 
 
 ## Testing
+
  * A separate document for testing can be found here.
 
 ## Bugs
+
  * Fixed Bugs
  - Image - had issues with images path and config.
  - Bookmarkserializer - a typo error caused malfunction.
 
 ## Remaining Bugs
 
- * 1
- -![Images](./static/Screenshot%202024-05-07_121003.png)
+ * No remening bug at the moment.
+ - ![Images](#)
 
 ## Deployment
 
@@ -230,6 +260,7 @@
  * SlackOverflow
  * Moments walkthrough project
  * Antonio Rodriquez - mentor
+ * Dev Community
 
 ## Images
  * pexels.com/photo
