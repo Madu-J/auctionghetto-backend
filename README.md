@@ -1,5 +1,6 @@
-<h1 style="font-size: 36px; text-align: center;">Auctiongetto API
-</h1>
+<p>
+<h1 style="font-size: 45px; text-align: center; color: blue;">Auctiongetto API</h1>
+</p>
 
 <br>
   Welcome to Auctionghetto server ! In Auctionghetto platform we priotize our customer's interest. Auctionghetto is built on a powerful toolkit using Django REST framework. This Auctionghetto backend is smoothly interacts with frontend side of Auctionghetto Application Programming Interfaces, when the API sends a request to the server, then the server sends a response back to the clients.
@@ -10,12 +11,13 @@
 
 <br>
 
- - ![auctionghetto-live app](https://auctionghetto-65bba3a96be0.herokuapp.com)
+ - To view Auctionghetto-live app -  Click
+ [here](https://auctionghetto-65bba3a96be0.herokuapp.com).
  
-  * Follow the link for Backend & Frontend repository of Auctionghetto project.
-  - ![auctionghetto-backend](https://github.com/Madu-J/auctionghetto-backend)
-  - ![auctionghetto-frontend](https://github.com/Madu-J/auctionghetto-frontend)
+  * Follow this link to view the Frontend repository of Auctionghetto project. Link - 
+[here](https://github.com/Madu-J/auctionghetto-frontend).
 
+<br>
 
 ## Table of Contents
 
@@ -27,7 +29,7 @@
 
    - [Design](#design)
 
- + [Future](#future)
+ + [Feature](#feature)
       - [Future Features](#future-features)
       - [Testing](#testing)
       - [Bugs](#bugs)
@@ -45,8 +47,9 @@
       - [Credit](#credit)
       - [Media](#media)
     
+<br>
 
-## User Experience (UX)
+# User Experience (UX)
 
  - Welcome to Auctionghetto, Auctionghetto is an auction platform where potential user sample and sale their products. Our aim is to provide a community friendly platform for both buyers and salers looking to buy or sell their items.
 
@@ -57,8 +60,9 @@
  - You can personalize your choice product as a registered user, you can conveniently bookmark your choice product for a revisit. 
   This feature allows you make an informed decision after you might have compared several other items before buying.
 
+<br>
 
-## User Stories 
+# User Stories 
 
  * USER-STORY: Navigation
  - As a user, I want to access the navbar on every page, so that I can easily navigate through every section of the website I 
@@ -74,16 +78,20 @@
  - As a User, I want to be able to edit my profile (Auctioneer) on Auctionghetto, so that I can update or change my information.
 
  * To view more User Story, the user stories are available in the GitHub repository.
- - ![user-story](media/user_st.png)
- - ![user-story](https://github.com/users/Madu-J/projects/14/views/1)
 
- # Agile methodology
+ - ![user-story](media/user_st.png)
+
+ - To view more User Stories- Click [here](https://github.com/users/Madu-J/projects/14/views/1).
+
+ ## Agile methodology
 
  - During the project development, I embraced an Agile Methodology, leveraging the powerful capabilities of GitHub Projects to create User Stories.
 
-## Project Administration
+<br>
 
- # Administrative Tasks
+# Project Administration
+
+## Administrative Tasks
 
  - User management
  - Access control and permissions
@@ -110,31 +118,46 @@
  - Analyzing logs for errors or issues
  - Responding to system alerts
  - ![auction_listpanel](media/auctionL.png)
+
  - ![auctioneer_listpanel](media/auctioneerL.png)
 
-## Features
+<br>
+
+# Design
+
+* Project data structure.
+
+ - ![data_table](media/data_str.jpg)
+
+<br>
+
+# Features
 
  * Database schedule
 
  * Auction
 
  - The "auction_id" column presents is uniquely identifies each auction or product. The "auction_name" column stores the name of auctioneer. The "location" column represents the location of each auction. The "contact_info" column stores the contact information for the auction.
+
  - ![auction_table](media/auctiont.png)
 
  * Feeds
 
  - The feed_id: This column has a unique identifier for each feed post and each with different "feed_id" value, allowing you to uniquely identify and reference every feed post.
  The auction_id: This column stores the auction to identify and associate with each feed post. It represents the auctioneer who is responsible for creating or posting, also allows for multiple feed posts, and the "auction_id" helps establish the relationship between the auction and their respective feed posts.
+
  - ![feed_table](media/feedt.png)
 
  - Users
 
  - The "user_id" column represents a unique identifier for each user entry. The "username" column stores the username of the user. The "email" column represents the email address associated with the user. The "password" column stores the password (hashed or encrypted) for user authentication. Prodoct column stores the item or product associated to each user.
+
  - ![user_tabe](media/usert.png)
 
  * Bookmarks 
 
  - The "bookmarks_id" column represents a unique identifier for each saved entry. The "user_id" column corresponds to the user who saved the entry, and the "auction_id" column corresponds to the auction being saved. The "date_created" column represents the date when the entry was saved.
+
  - ![bookmark_table](media/bookmarkt.png)
 
  * Followers
@@ -143,10 +166,10 @@
   + Row 1 informs that the user with user_id 2 is following the auctioneer with auction_id 3. This table allows to establish and track the followership relationship between users.
   Row 2 is pointing that the user with user_id 3 is following the auctioneer with auction _id 1.
   As row 3 is pointing that the user with user_id 1 is following the auctioneer with auction_id 2.
+
  - ![followers_table](media/followert.png)
 
- * Data structure
- - ![data_table](media/data_str.jpg)
+<br>
 
 ## Future Features
 
@@ -154,7 +177,9 @@
  
  * Future feature will include bidders app and serializer, this will help enhance user experience, so that auctionghetto user or auctioneer can view the highest bidder.
 
-## Technologies Used
+<br>
+
+# Technologies Used
 
  * Python: Python
  - Built-in Packages/Modules
@@ -165,7 +190,7 @@
  * Django 3.2.19
  * Django Rest Framework 3.15.1
 
- # Frameworks, Libraries & Programs Used
+## Frameworks, Libraries & Programs Used
 
  * Dj-rest-auth Authentication - dj-rest-auth is a Django Rest Framework (DRF) extension offers API help for handling all authentication related processes to DRF-based projects, such as user registration, login, logout and password reset.
 
@@ -189,10 +214,11 @@
 
  * Psycopg2 - Psycopg2 is the most popular PostgreSQL database adapter for the Python programming language. It allows Django to connect and interact with PostgreSQL databases, enabling retrieve data and storage.
 
+<br>
 
 ## Testing
 
- * All code underwent validator checkes using CI Python Linter.
+ * Code underwent validator checkes using CI Python Linter.
 
 ## Bugs
 
@@ -200,15 +226,20 @@
  - Image - had issues with images path and config.
  - Bookmarkserializer - a typo error caused malfunction.
  - In settings.py identation error fixed.
+
  - ![ettings.py_testing](static/settings.pyt.png)
 
 ## Remaining Bugs
 
- * No new bug remaining.
+ * No new bug remaining.. see images below:
+
  - ![Bookmarkserializer_validation](static/serialzertest.png)
+<br>
  - ![ettings.py_validation](static/settings.pyv.png)
 
-## Deployment
+<br>
+
+# Deployment
 
  * To deploy the project, follow these steps:
 
@@ -256,7 +287,9 @@
 - Once you have chosen your deployment method and clicked "Deploy Branch", Heroku will build your application.
 - Finally, you should see the "View" button. Click on it to open your deployed application.
 
-## Credit
+<b>
+
+# Credit
  * React Bootstrap documentation and examples
  * CodeInstitute tutorial materials and tutors
  * Suzan Dewitz - SuzanDewitz/autotraders
@@ -266,10 +299,12 @@
  * Antonio Rodriquez - mentor
  * Dev Community
 
-## Images
+# Images
  * pexels.com/photo
  * Flaticom
  * Icon Packs
  * Vecteezy
  * Pingterest
  * The Noun Project
+
+<br>
