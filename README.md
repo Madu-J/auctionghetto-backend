@@ -29,6 +29,7 @@
 
  + [Future](#future)
       - [Future Features](#future-features)
+      - [Testing](#testing)
       - [Bugs](#bugs)
       - [Fixed Bugs](#fixed-bugs)
       - [Remaining Bugs](#remaining-bugs)
@@ -191,18 +192,21 @@
 
 ## Testing
 
- * A separate document for testing can be found here.
+ * All code underwent validator checkes using CI Python Linter.
 
 ## Bugs
 
- * Fixed Bugs
+ * Bugs fixed
  - Image - had issues with images path and config.
  - Bookmarkserializer - a typo error caused malfunction.
+ - In settings.py identation error fixed.
+ - ![ettings.py_testing](static/settings.pyt.png)
 
 ## Remaining Bugs
 
- * No remening bug at the moment.
- - ![Images](#)
+ * No new bug remaining.
+ - ![Bookmarkserializer_validation](static/serialzertest.png)
+ - ![ettings.py_validation](static/settings.pyv.png)
 
 ## Deployment
 
