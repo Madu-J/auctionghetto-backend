@@ -11,11 +11,9 @@ from .settings import (
 @api_view()
 def root_route(request):
     return Response(
-        {
-        "message": "Welcome to Auctionghetto API",
-        "documentation": (
+        {"message": "Welcome to Auctionghetto API", "documentation": (
             "https://https://github.com/Madu-J/auctionghetto-backend"
-            ),
+        ),
         }
     )
 

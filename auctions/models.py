@@ -7,7 +7,7 @@ class Auction(models.Model):
     This model provides field to create, retrieve or update
     postings in database by user instance.
     """
-    
+
     categories_choices = [
         ('home', 'Home'),
         ('office', 'Office'),
@@ -16,7 +16,7 @@ class Auction(models.Model):
         ('industry', 'Industry'),
         ('agriculture', 'Agriculture'),
         ('automobile', 'Automobile'),
-        ('sports','Sports'),
+        ('sports', 'Sports'),
         ('electronics', 'Electronics'),
     ]
 
@@ -54,17 +54,18 @@ class Auction(models.Model):
     )
     products = models.CharField(
         max_length=30, choices=products_choices, default='phones')
-    auctionday = models.CharField( 
+    auctionday = models.CharField(
         max_length=30, choices=auctionday_choices, default='monday'
          )
     description = models.TextField()
     year = models.PositiveIntegerField()
     price = models.FloatField()
-    image = models.ImageField(upload_to="images/", default='../default_post_dwzcuabfl')
+    image = models.ImageField(
+        upload_to="images/", default='../default_post_dwzcuabfl'
+    )
 
     class Meta:
-         ordering = ["-created_at"]
+        ordering = ["-created_at"]
 
     def __str__(self):
         return f"{self.id} {self.title}"
-    

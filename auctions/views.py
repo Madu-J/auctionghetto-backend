@@ -24,8 +24,7 @@ class AuctionList(generics.ListCreateAPIView):
         "owner__auctioneer",
     ]
     search_fields = [
-         "title",
-        "owner__username",
+         "title", "owner__username",
     ]
 
     def perform_create(self, serializer):

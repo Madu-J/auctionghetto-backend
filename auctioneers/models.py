@@ -5,7 +5,7 @@ from django.db.models.signals import post_save
 
 class Auctioneer(models.Model):
     """
-    Model for user profile (Auctioneer) 
+    Model for user profile (Auctioneer)
     """
     owner = models.OneToOneField(
         User, on_delete=models.CASCADE, related_name='auctioneer'
@@ -19,16 +19,17 @@ class Auctioneer(models.Model):
     street_address = models.CharField(max_length=40)
     city = models.CharField(max_length=40)
     description = models.TextField(blank=True, null=True)
-    image = models.ImageField(upload_to="images/", default='../default_auctioneer_dwzcuabfl')
+    image = models.ImageField(
+        upload_to="images/", default='../default_auctioneer_dwzcuabfl')
 
     class Meta:
         ordering = ["-created_at"]
 
     def __str__(self):
         return f"{self.owner}'s auctioneer"
-        
+
     def create_auctioneer(sender, instance, created, **kwargs):
         if created:
             Auctioneer.objects.create(owner=instance)
-            
+
     post_save.connect(create_auctioneer, sender=User)

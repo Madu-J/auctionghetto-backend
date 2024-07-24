@@ -10,9 +10,9 @@ class Bookmark(models.Model):
     a user from bookmarking same item twice.
     """
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
-    auction = models.ForeignKey(Auction, 
-    on_delete=models.CASCADE, default=None, related_name="bookmarks"
-    )
+    auction = models.ForeignKey(
+        Auction, on_delete=models.CASCADE,
+        default=None, related_name="bookmarks")
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:

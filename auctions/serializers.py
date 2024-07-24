@@ -2,6 +2,7 @@ from rest_framework import serializers
 from .models import Auction
 from bookmarks.models import Bookmark
 
+
 class AuctionSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source="owner.username")
     is_owner = serializers.SerializerMethodField()
@@ -42,4 +43,3 @@ class AuctionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Auction
         fields = "__all__"
-        

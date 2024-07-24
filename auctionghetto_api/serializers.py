@@ -10,3 +10,4 @@ class CurrentUserSerializer(UserDetailsSerializer):
         fields = UserDetailsSerializer.Meta.fields + (
             'auctioneer_id', 'auctioneer_image'
         )
+

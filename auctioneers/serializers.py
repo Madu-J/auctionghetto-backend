@@ -17,7 +17,7 @@ class AuctioneerSerializer(serializers.ModelSerializer):
     def get_is_owner(self, obj):
         request = self.context["request"]
         return request.user == obj.owner
-    
+
     def get_following_id(self, obj):
         user = self.context["request"].user
         if user.is_authenticated:
@@ -26,7 +26,7 @@ class AuctioneerSerializer(serializers.ModelSerializer):
                 ).first()
             return following.id if following else None
         return None
-        
+
     class Meta:
         model = Auctioneer
         fields = "__all__"

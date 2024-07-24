@@ -40,6 +40,7 @@ class AuctioneerList(generics.ListAPIView):
         "owner__followed__created_at",
     ]
 
+
 class AuctioneerDetails(generics.RetrieveUpdateAPIView):
     """
     Auctioneer details is used for editing or deleting profiles.
