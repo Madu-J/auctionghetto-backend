@@ -218,7 +218,7 @@
 
 ## Testing
 
- * Code underwent validator checkes using CI Python Linter - [here](https://pep8ci.herokuapp.com/).
+ * Code underwent validator checks using CI Python Linter - [Link](https://pep8ci.herokuapp.com/).
 
 ## Bugs
 
