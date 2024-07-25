@@ -15,7 +15,7 @@
  [here](https://auctionghetto-65bba3a96be0.herokuapp.com).
  
   * Follow this link to view the Frontend repository of Auctionghetto project. Link - 
-[here](https://github.com/Madu-J/auctionghetto-frontend).
+[here](https://github.com/Madu-J/auctionghetto-frontend/blob/main/README.md).
 
 <br>
 
