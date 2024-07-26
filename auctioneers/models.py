@@ -13,12 +13,12 @@ class Auctioneer(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=60)
-    email = models.CharField(max_length=60)
-    phone = models.CharField(max_length=12)
-    postcode = models.CharField(max_length=6, null=True)
+    description = models.TextField(blank=True, null=True)
     street_address = models.CharField(max_length=40)
     city = models.CharField(max_length=40)
-    description = models.TextField(blank=True, null=True)
+    postcode = models.CharField(max_length=6, null=True)
+    email = models.CharField(max_length=60)
+    phone = models.CharField(max_length=12)
     image = models.ImageField(
         upload_to="images/", default='../default_auctioneer_dwzcuabfl')
 
