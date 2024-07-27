@@ -11,11 +11,12 @@
 
 <br>
 
- - To view Auctionghetto-live app -  Click
- [here](https://auctionghetto-65bba3a96be0.herokuapp.com).
+#### To view Auctionghetto-live app :
+- Click [here](https://auctionghetto-api-17774afbeb21.herokuapp.com/)
+
  
-  * Follow this link to view the Frontend repository of Auctionghetto project. Link - 
-[here](https://github.com/Madu-J/auctionghetto-frontend/blob/main/README.md).
+#### Follow this link below to view the Frontend repository of this project :
+- [Auctionghetto Frontend](https://github.com/Madu-J/auctionghetto-frontend/blob/main/README.md)
 
 <br>
 
@@ -70,18 +71,19 @@
   
  - As a user, I want to scroll without pagination so that I can view more items on the site and have a seamless browsing experience.
  
- - As a user, I want to be able to search keywords in the search bar so that I can easily access specific items that I am looking for on Auctionghetto website
+ - As a user, I want to be able to search keywords in the search bar so that I can easily access specific items that I am looking for on Auctionghetto website.
  
  * USER-STORY: Account
- - As an Admin, I want to be able to click on a profile to find more information about the auctioneer on Auctionghetto website, so that I can be able to assess their credibility and make informed decisions.
+ - As an Admin, I want to be able to click on a profile (auctioneer) and find more information about the auctioneer on Auctionghetto website, so that I can be able to assess the detail and make informed decision.
 
- - As a User, I want to be able to edit my profile (Auctioneer) on Auctionghetto, so that I can update or change my information.
+ - As a User, I want to be able to edit my profile (Auctioneer) on Auctionghetto, so that I can update or change information.
 
  * To view more User Story, the user stories are available in the GitHub repository.
 
  - ![user-story](media/user_st.png)
 
- - To view more User Stories- Click [here](https://github.com/users/Madu-J/projects/14/views/1).
+ #### To see Auctionghetto Github User Stories - Click [User-Stories](https://github.com/users/Madu-J/projects/14/views/1)
+
 
  ## Agile methodology
 
