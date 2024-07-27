@@ -80,7 +80,7 @@
 
  * To view more User Story, the user stories are available in the GitHub repository.
 
- - ![user-story](media/user_st.png)
+ - ![User-Story](media/user_st.png)
 
  #### To see Auctionghetto Github User Stories - Click [User-Stories](https://github.com/users/Madu-J/projects/14/views/1)
 
