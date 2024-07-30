@@ -229,15 +229,17 @@
  - Bookmarkserializer - a typo error caused malfunction.
  - In settings.py identation error fixed.
 
- - ![ettings.py_testing](static/settings.pyt.png)
-
-## Remaining Bugs
-
- * No new bug remaining.. see images below:
+ - ![settings.py_testing](static/settings.pyt.png)
 
  - ![Bookmarkserializer_validation](static/serialzertest.png)
-<br>
- - ![ettings.py_validation](static/settings.pyv.png)
+
+ - ![settings.py_validation](static/settings.pyv.png)
+
+ ## Remaining Bugs
+
+* To fixed:
+
+ I noticed that Auction create image has stopped loading and display along with auction detail.
 
 <br>
 
