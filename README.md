@@ -294,13 +294,10 @@
 # Credit
  * React Bootstrap documentation and examples
  * CodeInstitute tutorial materials and tutors
- * Suzan Dewitz - SuzanDewitz/autotraders
- * Google search engine
- * SlackOverflow
  * Moments walkthrough project
- * Antonio Rodriquez - mentor
- * Dev Community
-
+ * Autotraders
+ * Google search engine
+ 
 # Images
  * pexels.com/photo
  * Flaticom
