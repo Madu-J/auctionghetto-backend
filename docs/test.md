@@ -95,66 +95,66 @@ With final deployed version, no error was detected by pycodestyle. And this clea
 
 - auctionghetto_api_url.py
 
-![auctionghetto_api_url.py]()
+![auctionghetto_api_url.py](../docs/img/api_url.py.png)
 
 <br>
 
 - settings.py
 
-![settings.py]() with error
+![settings.py](../docs/img/settings.err.png) with error
 
 <br>
 
-![settings.py]() no error
+![settings.py](../docs/img/settings.py.png) no error
 
 <br>
 
 - auction_models.py
 
-![auction_models.py]()
+![auction_models.py](../docs/img/auction_models.py.png)
 
 
 <br>
 
 - auction_serializers.py
 
-![auction_serializers.py]()
+![auction_serializers.py](../docs/img/auction_serializers.py.png)
 
 <br>
 
 - auction_views.py
 
-![auction_views.py]()
+![auction_views.py](../docs/img/auction_views.py.png)
 
 <br>
 
-- auctioneers_models.py
+- auctioneer_models.py
 
-![auctioneers_models.py]()
-
-<br>
-
-- auctioneers_serializers.py
-
-![auctioneers_serializers.py]()
+![auctioneer_models.py](../docs/img/auctioneer_models.py.png)
 
 <br>
 
-- auctioneers_views.py
+- auctioneer_serializers.py
 
-![auctioneers_views.py]()
-
-<br>
-
-- bookmarks_views.py.
-
-![bookmarks_views.py.]()
+![auctioneer_serializers.py](../docs/img/auctioneer_serializers.py.png)
 
 <br>
 
-- followers_views.py
+- auctioneer_views.py
 
-![followers_views.py]()
+![auctioneer_views.py](../docs/img/auctioneer_views.py.png)
+
+<br>
+
+- bookmark_views.py.
+
+![bookmark_views.py.](../docs/img/bookmark_views.py.png)
+
+<br>
+
+- follower_serializers.py
+
+![follower_serializers.py](../docs/img/follower_serializers.py.png)
 
 <br>
 
