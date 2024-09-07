@@ -127,7 +127,7 @@ With final deployed version, no error was detected by pycodestyle. And this clea
 
 <br>
 
-- auctioneer_models.py
+- Auctioneer_models.py
 
 ![auctioneer_models.py](../docs/img/auctioneer_models.py.png)
 

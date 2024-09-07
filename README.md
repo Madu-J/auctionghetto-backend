@@ -219,7 +219,7 @@
 <br>
 
 ## Testing
- * [test.md](https://github.com/Madu-J/auctionghetto-backend/blob/main/docs/test.md)
+ * To view manual test documentaion. Click > [test.md](https://github.com/Madu-J/auctionghetto-backend/blob/main/docs/test.md)
  * Code underwent validator checks using CI Python Linter - [Link](https://pep8ci.herokuapp.com/).
 
 ## Bugs
@@ -308,4 +308,7 @@
  * Pingterest
  * The Noun Project
 
+<br>
+
+[Back to top](#top)
 <br>
