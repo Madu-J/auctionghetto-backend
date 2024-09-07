@@ -12,10 +12,9 @@
 
 
 ## Manual Testing
-
-- The root router displays a welcome message once link is open.
-- Manual test were performed to make sure that all connections work properly and as expected.
 - Users can log in and out from the app smoothly.
+- The root router displays a welcome message once link opens.
+- Manual test were performed to make sure that all connections work properly and as expected.
 - Overall development process of this API, underwent comprehensive manual testing to verify the functionality of various  
 features: This covers a thorough assessment of
 all URL in the app and rigorously examine the result, ensuring expected behaviour base on the state of authorization. Also, a proper testing was conducted to make sure functions such as adding items, updates, and deletions works smoothly. So, with these tests' issues were identified and addressed making sure the API is efficiently working and reliable for users.
