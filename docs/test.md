@@ -13,8 +13,8 @@
 
 ## Manual Testing
 
-- The root route welcome message is being shown correctly.
-- All links were manually tested to check that they are being rendered as intended.
+- The root router displays a welcome message once link is open.
+- Manual test were performed to make sure that all connections work properly and as expected.
 - Users can log in and out from the app smoothly.
 - Overall development process of this API, underwent comprehensive manual testing to verify the functionality of various  
 features: This covers a thorough assessment of
@@ -93,36 +93,36 @@ With final deployed version, no error was detected by pycodestyle. And this clea
 
 <br>
 
-- auctionghetto_api_url.py
+- Auctionghetto_api_url.py
 
 ![auctionghetto_api_url.py](../docs/img/api_url.py.png)
 
 <br>
 
-- settings.py
+- Settings.py
 
-![settings.py](../docs/img/settings.err.png) with error
-
-<br>
-
-![settings.py](../docs/img/settings.py.png) no error
+![settings.py](../docs/img/settings.err.png) Settings.py with error
 
 <br>
 
-- auction_models.py
+![settings.py](../docs/img/settings.py.png) Settings.py no error
+
+<br>
+
+- Auction_models.py
 
 ![auction_models.py](../docs/img/auction_models.py.png)
 
 
 <br>
 
-- auction_serializers.py
+- Auction_serializers.py
 
 ![auction_serializers.py](../docs/img/auction_serializers.py.png)
 
 <br>
 
-- auction_views.py
+- Auction_views.py
 
 ![auction_views.py](../docs/img/auction_views.py.png)
 
@@ -134,25 +134,25 @@ With final deployed version, no error was detected by pycodestyle. And this clea
 
 <br>
 
-- auctioneer_serializers.py
+- Auctioneer_serializers.py
 
 ![auctioneer_serializers.py](../docs/img/auctioneer_serializers.py.png)
 
 <br>
 
-- auctioneer_views.py
+- Auctioneer_views.py
 
 ![auctioneer_views.py](../docs/img/auctioneer_views.py.png)
 
 <br>
 
-- bookmark_views.py.
+- Bookmark_views.py.
 
 ![bookmark_views.py.](../docs/img/bookmark_views.py.png)
 
 <br>
 
-- follower_serializers.py
+- Follower_serializers.py
 
 ![follower_serializers.py](../docs/img/follower_serializers.py.png)
 
