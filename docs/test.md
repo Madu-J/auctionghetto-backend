@@ -12,7 +12,7 @@
 
 
 ## Manual Testing
-- Users can log in and out from the app smoothly.
+- Users log in and out from the app effortlessly.
 - The root router displays a welcome message once link opens.
 - Manual test were performed to make sure that all connections work properly and as expected.
 - Overall development process of this API, underwent comprehensive manual testing to verify the functionality of various  
