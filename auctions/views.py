@@ -1,4 +1,3 @@
-from django.db.models import Count
 from rest_framework import generics, filters, permissions
 from django_filters.rest_framework import DjangoFilterBackend
 from auctionghetto_api.permissions import IsOwnerOrReadOnly
