@@ -80,7 +80,7 @@
 
  * To view more User Story, the user stories are available in the GitHub repository.
 
- - ![User-Story](media/user_st.png)
+ - ![User-Story](static/user_st.png)
 
  #### To see Auctionghetto Github User Stories - Click [User-Stories](https://github.com/users/Madu-J/projects/14/views/1)
 
@@ -119,9 +119,9 @@
  - Monitoring system performance
  - Analyzing logs for errors or issues
  - Responding to system alerts
- - ![auction_listpanel](media/auctionL.png)
+ - ![auction_listpanel](static/auctionL.png)
 
- - ![auctioneer_listpanel](media/auctioneerL.png)
+ - ![auctioneer_listpanel](static/auctioneerL.png)
 
 <br>
 
@@ -129,7 +129,7 @@
 
 * Project data structure.
 
- - ![data_table](media/data_str.jpg)
+ - ![data_table](static/data_str.jpg)
 
 <br>
 
@@ -141,26 +141,26 @@
 
  - The "auction_id" column presents is uniquely identifies each auction or product. The "auction_name" column stores the name of auctioneer. The "location" column represents the location of each auction. The "contact_info" column stores the contact information for the auction.
 
- - ![auction_table](media/auctiont.png)
+ - ![auction_table](static/auctiont.png)
 
  * Feeds
 
  - The feed_id: This column has a unique identifier for each feed post and each with different "feed_id" value, allowing you to uniquely identify and reference every feed post.
  The auction_id: This column stores the auction to identify and associate with each feed post. It represents the auctioneer who is responsible for creating or posting, also allows for multiple feed posts, and the "auction_id" helps establish the relationship between the auction and their respective feed posts.
 
- - ![feed_table](media/feedt.png)
+ - ![feed_table](static/feedt.png)
 
  - Users
 
  - The "user_id" column represents a unique identifier for each user entry. The "username" column stores the username of the user. The "email" column represents the email address associated with the user. The "password" column stores the password (hashed or encrypted) for user authentication. Prodoct column stores the item or product associated to each user.
 
- - ![user_tabe](media/usert.png)
+ - ![user_tabe](static/usert.png)
 
  * Bookmarks 
 
  - The "bookmarks_id" column represents a unique identifier for each saved entry. The "user_id" column corresponds to the user who saved the entry, and the "auction_id" column corresponds to the auction being saved. The "date_created" column represents the date when the entry was saved.
 
- - ![bookmark_table](media/bookmarkt.png)
+ - ![bookmark_table](static/bookmarkt.png)
 
  * Followers
 
@@ -169,7 +169,7 @@
   Row 2 is pointing that the user with user_id 3 is following the auctioneer with auction _id 1.
   As row 3 is pointing that the user with user_id 1 is following the auctioneer with auction_id 2.
 
- - ![followers_table](media/followert.png)
+ - ![followers_table](static/followert.png)
 
 <br>
 
