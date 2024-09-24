@@ -20,7 +20,7 @@ class Auctioneer(models.Model):
     email = models.CharField(max_length=60)
     phone = models.CharField(max_length=12)
     image = models.ImageField(
-        upload_to="images/", default='../auctioneer_image')
+        upload_to="images/", default="../default_auctioneer_amxaod")
 
     class Meta:
         ordering = ["-created_at"]
