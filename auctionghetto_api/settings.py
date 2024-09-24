@@ -72,7 +72,7 @@ DEBUG = "DEV" in os.environ
 ALLOWED_HOSTS = [
     'localhost',
     'auctionghetto-api-17774afbeb21.herokuapp.com',
-    '8000-maduj-auctionghettobac-28d024pvhrj.ws-eu115.gitpod.io',
+    '8000-maduj-auctionghettobac-6ef0hxwso18.ws-eu116.gitpod.io',
     '8000-maduj-auctionghettobac-lzmi40f4r1p.ws.codeinstitute-ide.net',
 ]
 
@@ -125,6 +125,7 @@ if "CLIENT_ORIGIN_DEV" in os.environ:
         r"^.+-", os.environ.get("CLIENT_ORIGIN_DEV", ""), re.IGNORECASE
     ).group(0)
     CORS_ALLOWED_ORIGIN_REGEXES = [
+        r'^https://.*\.gitpod\.io$',
         r"^https://.*\.codeinstitute-ide\.net$",
     ]
 
