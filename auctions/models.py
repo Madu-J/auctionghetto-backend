@@ -61,7 +61,7 @@ class Auction(models.Model):
     year = models.PositiveIntegerField()
     price = models.FloatField()
     image = models.ImageField(
-        upload_to="images/", default='../default_post_dwzcuabfl'
+        upload_to="images/", default="../default_auction_mvxwre"
     )
 
     class Meta:
