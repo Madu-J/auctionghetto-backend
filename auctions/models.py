@@ -50,18 +50,19 @@ class Auction(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     title = models.CharField(max_length=20)
     categories = models.CharField(
-        max_length=30, choices=categories_choices, default='home'
+        max_length=30, choices=categories_choices, default="home"
     )
     products = models.CharField(
-        max_length=30, choices=products_choices, default='phones')
+        max_length=30, choices=products_choices, default="phones"
+    )
     auctionday = models.CharField(
-        max_length=30, choices=auctionday_choices, default='monday'
-         )
+        max_length=30, choices=auctionday_choices, default="monday"
+    )
     description = models.TextField()
     year = models.PositiveIntegerField()
     price = models.FloatField()
     image = models.ImageField(
-        upload_to="images/", default="../default_auction_mvxwre"
+        upload_to="images/", default="../default_post_mvxwre", blank=True
     )
 
     class Meta:
