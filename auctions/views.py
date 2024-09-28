@@ -37,3 +37,7 @@ class AuctionDetails(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = AuctionSerializer
     permission_classes = [IsOwnerOrReadOnly]
     queryset = Auction.objects.all()
+
+    def perform_update(self, serializer):
+        print(f"Request data: {self.request.data}")  # Debug print
+        serializer.save(owner=self.request.user)
