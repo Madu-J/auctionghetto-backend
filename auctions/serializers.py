@@ -51,10 +51,10 @@ class AuctionSerializer(serializers.ModelSerializer):
         model = Auction
         # fields = "__all__"
         fields = [
+            'id',
             'owner',
             'is_owner',
             'image',
-            'created_at',
             'updated_at',
             'title',
             'categories',
