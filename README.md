@@ -3,44 +3,31 @@
 </p>
 
 <br>
-  Welcome to Auctionghetto server ! In Auctionghetto platform we priotize our customer's interest. Auctionghetto is built on a powerful toolkit using Django REST framework. This Auctionghetto backend is smoothly interacts with frontend side of Auctionghetto Application Programming Interfaces, when the API sends a request to the server, then the server sends a response back to the clients.
-  
-  The mode of communication between these two APIs, the backend and the frontend which are tools responsible for connecting software or systems, enabling them to interact with each other simultaneously.
-
-  Following features are available in our site In Auctionghetto we offer a user-friendly interface that allows sellers to effortlessly create captivating listings. Our intuitive posting system ensures that sellers can showcase their auctions with compelling descriptions and high-quality images.
-
-<br>
-
-#### To view Auctionghetto-live app :
-- Click [here](https://auctionghetto-api-17774afbeb21.herokuapp.com/)
-
- 
-#### Follow this link below to view the Frontend repository of this project :
-- [Auctionghetto Frontend](https://github.com/Madu-J/auctionghetto-frontend/blob/main/README.md)
-
-<br>
 
 ## Table of Contents
 
-  + [User Experience (UX)](#user-experience-ux)
-
+   + [User Experience (UX)](#user-experience-ux)
+   - [Live app & Links](#live-app-&-links)
    - [User Stories](#user-stories)
-
+     - [Agile methodology](#agile-methodology)
    - [Project Administration](#project_administration)
-
    - [Design](#design)
-
  + [Feature](#feature)
-      - [Future Features](#future-features)
-      - [Testing](#testing)
+   - [Auction app](#auction-app)
+   - [Feeds app](#feeds-app)
+   - [Bookmarks app](#bookmarks-app)
+   - [Followers app](#followers-app)
+ + [Future Features](#future-features)
+   - [payment feature](#payment-feature)
+   - [Bidders app](#bidders-app)
+ - [Testing](#testing)
       - [Bugs](#bugs)
       - [Fixed Bugs](#fixed-bugs)
       - [Remaining Bugs](#remaining-bugs)
- - [Technologies Used](#technologies-used)
-      - [Languages and Frameworks Used](#languages-and-frameworks-used)
-      - [Python Modules Used](#python-modules-used)
-      - [Packages Used](#packages-used)
-      - [Programs and Tools Used](#programs-and-tools-used)
+      - [Languages used](#languages-used)
+      - [Technologies Used](#technologies-used)
+        - [Python Modules Used](#python-modules-used)
+        - [Frameworks Libraries & Programs](#frameworks-libraries-&-programs-used)
  - [Deployment](#deployment)
      - [Deploying to GitHub](#deploying-to-github)
      - [Deploying with Heroku](#deploying-with-heroku)
@@ -52,16 +39,24 @@
 
 # User Experience (UX)
 
- - Welcome to Auctionghetto, Auctionghetto is an auction platform where potential user sample and sale their products. Our aim is to provide a community friendly platform for both buyers and salers looking to buy or sell their items.
+  Welcome to Auctionghetto server ! In Auctionghetto platform we priotize our customer's interest. Auctionghetto is built on a powerful toolkit using Django REST framework. This Auctionghetto backend is smoothly interacts with the frontend side of the application Programming Interfaces, when the API sends a request to the server, then the server sends a response back to the clients.
+  
+  The mode of communication between these two APIs, the backend and the frontend which are tools responsible for connecting software or systems, enabling them to interact with each other simultaneously.
 
- # Following features are available in our site
+  Following features are available in this site : Auction, Feeds, Bookmarks and Followers app's. In Auctionghetto we intend to offer a super user friendly interface that allows sellers to effortlessly create captivating listings. Our intuitive posting system ensures that sellers can showcase their auctions with compelling descriptions and high-quality images.
 
- - In Auctionghetto we offer a user-friendly interface that allows sellers to effortlessly create captivating listings. Our intuitive posting system ensures that sellers can showcase their auctions with compelling descriptions and high-quality images. 
-
- - You can personalize your choice product as a registered user, you can conveniently bookmark your choice product for a revisit. 
-  This feature allows you make an informed decision after you might have compared several other items before buying.
+ - Auctionghetto is an auction platform where potential user sample and sale their products. Our aim is to provide a community friendly platform for both buyers and salers looking to buy or sell their items. We will continue to build the platform to make it more interactive for users.
 
 <br>
+
+# Live app & Links
+
+#### To view Auctionghetto-live app :
+- Click [here](https://auctionghetto-api-17774afbeb21.herokuapp.com/)
+
+ 
+#### Follow this link below to view the Frontend repository of this project :
+- [Auctionghetto Frontend](https://github.com/Madu-J/auctionghetto-frontend/blob/main/README.md)
 
 # User Stories 
 
@@ -129,13 +124,12 @@
 
 * Project data structure.
 
- - ![data_table](static/data_str.jpg)
+- ![data_table](static/data_str.jpg)
 
 <br>
 
 # Features
 
- * Database schedule
 
  * Auction
 
@@ -173,7 +167,7 @@
 
 <br>
 
-## Future Features
+# Future Features
 
  * Payment System: Adding payment feature that will allow users make payment online in a situation where a potential buyer would prefer to pay online via Auctionghetto website.
  
@@ -181,19 +175,49 @@
 
 <br>
 
+# Testing
+
+ * To view manual test documentaion. Click > [test.md](https://github.com/Madu-J/auctionghetto-backend/blob/main/docs/test.md)
+ * Code underwent validator checks using CI Python Linter - [Link](https://pep8ci.herokuapp.com/).
+
+## Bugs
+
+ * Bugs fixed
+ - Image - had issues with images path and config.
+ - Bookmarkserializer - a typo error caused malfunction.
+ - In settings.py identation error fixed.
+
+ - ![settings.py_testing](static/settings.pyt.png)
+
+ - ![Bookmarkserializer_validation](static/serialzertest.png)
+
+ - ![settings.py_validation](static/settings.pyv.png)
+
+ ## Remaining Bugs
+
+## To fixed:
+
+ I noticed that Auction create image has stopped loading and display along with auction detail.
+
+<br>
+
+# Languages Used
+
+ * Python
+
 # Technologies Used
 
- * Python: Python
+#### Python Modules Used
+
+ - Django: Django
+ - Django 3.2.19
+ - Django Rest Framework 3.15.1
  - Built-in Packages/Modules
  - pathlib- Used to work with filepaths.
  - os - enables efficient file and directory management.
 
- * Django: Django
- * Django 3.2.19
- * Django Rest Framework 3.15.1
-
-## Frameworks, Libraries & Programs Used
-
+ #### Frameworks, Libraries & Programs Used
+ 
  * Dj-rest-auth Authentication - dj-rest-auth is a Django Rest Framework (DRF) extension offers API help for handling all authentication related processes to DRF-based projects, such as user registration, login, logout and password reset.
 
  * Django-allauth - is a Django package that provides a set of views, templates, and helper functions to handle user authentication, registration, and account management.
@@ -215,31 +239,6 @@
  * Gunicorn - Gunicorn is a pure-Python HTTP server for WSGI applications. It allows you run multiple Python processes within a single dyno. It provides a perfect balance of performance, flexibility, and configuration simplicity.
 
  * Psycopg2 - Psycopg2 is the most popular PostgreSQL database adapter for the Python programming language. It allows Django to connect and interact with PostgreSQL databases, enabling retrieve data and storage.
-
-<br>
-
-## Testing
- * To view manual test documentaion. Click > [test.md](https://github.com/Madu-J/auctionghetto-backend/blob/main/docs/test.md)
- * Code underwent validator checks using CI Python Linter - [Link](https://pep8ci.herokuapp.com/).
-
-## Bugs
-
- * Bugs fixed
- - Image - had issues with images path and config.
- - Bookmarkserializer - a typo error caused malfunction.
- - In settings.py identation error fixed.
-
- - ![settings.py_testing](static/settings.pyt.png)
-
- - ![Bookmarkserializer_validation](static/serialzertest.png)
-
- - ![settings.py_validation](static/settings.pyv.png)
-
- ## Remaining Bugs
-
-* To fixed:
-
- I noticed that Auction create image has stopped loading and display along with auction detail.
 
 <br>
 
@@ -295,7 +294,7 @@
 
 # Credit
  * React Bootstrap documentation and examples
- * CodeInstitute tutorial materials and tutors
+ * CodeInstitute tutorial materials, tutors and mentor
  * Moments walkthrough project
  * Autotraders
  * Google search engine
@@ -311,4 +310,5 @@
 <br>
 
 [Back to top](#top)
+
 <br>
