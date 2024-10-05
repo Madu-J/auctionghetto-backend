@@ -1,5 +1,5 @@
 <p>
-<h1 style="font-size: 45px; text-align: center; color: blue;">Auctiongetto API</h1>
+<h1 style="font-size: 45px; text-align: center; color: blue;">Auctiongetto API-Backend</h1>
 </p>
 
 <br>
@@ -171,7 +171,7 @@
  - Future feature will include bidders app and serializer, this will help enhance user experience, so that auctionghetto user or auctioneer can view the highest bidder.
 
  - Comment app: Creating an interactive section where users can interact with each other and share their views on about auction listings.
-  
+
 <br>
 
 # Testing
