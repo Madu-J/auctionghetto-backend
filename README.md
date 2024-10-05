@@ -18,8 +18,9 @@
    - [Bookmarks app](#bookmarks-app)
    - [Followers app](#followers-app)
  + [Future Features](#future-features)
-   - [payment feature](#payment-feature)
+   - [Payment feature](#payment-feature)
    - [Bidders app](#bidders-app)
+   - [Comment app](#comment-app)
  - [Testing](#testing)
       - [Bugs](#bugs)
       - [Fixed Bugs](#fixed-bugs)
@@ -39,13 +40,13 @@
 
 # User Experience (UX)
 
-  Welcome to Auctionghetto server ! In Auctionghetto platform we priotize our customer's interest. Auctionghetto is built on a powerful toolkit using Django REST framework. This Auctionghetto backend is smoothly interacts with the frontend side of the application Programming Interfaces, when the API sends a request to the server, then the server sends a response back to the clients.
+  - Welcome to Auctionghetto server ! Auctionghetto is an auction platform where potential user sample and sale their products. Our aim is to provide a community friendly platform for both buyers and salers looking to buy or sell their items. We will continue to build the platform to make it more interactive for users.
   
-  The mode of communication between these two APIs, the backend and the frontend which are tools responsible for connecting software or systems, enabling them to interact with each other simultaneously.
+  - In Auctionghetto platform we priotize our customer's interest. Auctionghetto is built on a powerful toolkit using Django REST framework. This Auctionghetto backend is smoothly interacting with the frontend side of the application Programming Interfaces, when the API sends a request to the server, then the server sends a response back to the clients.
+  
+  -The mode of communication between these two APIs, the backend and the frontend which are tools responsible for connecting software or systems, enabling them to interact with each other simultaneously.
 
-  Following features are available in this site : Auction, Feeds, Bookmarks and Followers app's. In Auctionghetto we intend to offer a super user friendly interface that allows sellers to effortlessly create captivating listings. Our intuitive posting system ensures that sellers can showcase their auctions with compelling descriptions and high-quality images.
-
- - Auctionghetto is an auction platform where potential user sample and sale their products. Our aim is to provide a community friendly platform for both buyers and salers looking to buy or sell their items. We will continue to build the platform to make it more interactive for users.
+  -Following features are available in this site: Auction, Feeds, Bookmarks and Followers app's. In Auctionghetto we intend to offer a super user friendly interface that allows sellers to effortlessly create captivating listings. Our intuitive posting system ensures that sellers can showcase their auctions with compelling descriptions and high-quality images.
 
 <br>
 
@@ -58,26 +59,22 @@
 #### Follow this link below to view the Frontend repository of this project :
 - [Auctionghetto Frontend](https://github.com/Madu-J/auctionghetto-frontend/blob/main/README.md)
 
-# User Stories 
+# User Stories
 
- * USER-STORY: Navigation
- - As a user, I want to access the navbar on every page, so that I can easily navigate through every section of the website I 
-  intend to visit.
-  
- - As a user, I want to scroll without pagination so that I can view more items on the site and have a seamless browsing experience.
- 
- - As a user, I want to be able to search keywords in the search bar so that I can easily access specific items that I am looking for on Auctionghetto website.
- 
- * USER-STORY: Account
- - As an Admin, I want to be able to click on a profile (auctioneer) and find more information about the auctioneer on Auctionghetto website, so that I can be able to assess the detail and make informed decision.
+- Below applications were fully implemented within the development of this project, as well as the features yet to be implemented are also readily viewable in Kanban board within Github repository for complete user-story. 
 
- - As a User, I want to be able to edit my profile (Auctioneer) on Auctionghetto, so that I can update or change information.
+- Auction and Feeds app: Again the aim of combining these API's is for the costumers or user to enjoy the robust performance and uninterruptible usage of our website which this backend serves as an assistance to providing free flow pages and feeds of the frontend as these two API's reduces burden to each other. 
+- Account and profile (Auctioneer): A site visitor can effortlessly create an account to be able to view information about a particular auctioneer on Auctionghetto website, in order to make a secure trade.
 
- * To view more User Story, the user stories are available in the GitHub repository.
+- Authentication and Bookmark feature: Site visitor can register an account to be able to bookmark their favorite auction items on Auctionghetto site.
+- User Authentication and Security: User can set the refresh an access tokens on Auctionghetto site, to reduce constant logged out.
+- Update auction listings: Allows Auctionghetto users to update their listed items, user can edit delete or update auction information on their page. 
 
  - ![User-Story](static/user_st.png)
 
- #### To see Auctionghetto Github User Stories - Click [User-Stories](https://github.com/users/Madu-J/projects/14/views/1)
+ * User stories are available in kanban GitHub repository.
+
+ #### To see Auctionghetto User Stories - Click [User-Stories](https://github.com/users/Madu-J/projects/14/views/1)
 
 
  ## Agile methodology
@@ -169,10 +166,12 @@
 
 # Future Features
 
- * Payment System: Adding payment feature that will allow users make payment online in a situation where a potential buyer would prefer to pay online via Auctionghetto website.
+ - Payment System: Adding payment feature that will allow users make payment online in a situation where a potential buyer would prefer to pay online via Auctionghetto website.
  
- * Future feature will include bidders app and serializer, this will help enhance user experience, so that auctionghetto user or auctioneer can view the highest bidder.
+ - Future feature will include bidders app and serializer, this will help enhance user experience, so that auctionghetto user or auctioneer can view the highest bidder.
 
+ - Comment app: Creating an interactive section where users can interact with each other and share their views on about auction listings.
+  
 <br>
 
 # Testing
@@ -181,23 +180,26 @@
  * Code underwent validator checks using CI Python Linter - [Link](https://pep8ci.herokuapp.com/).
 
 ## Bugs
-
- * Bugs fixed
  - Image - had issues with images path and config.
  - Bookmarkserializer - a typo error caused malfunction.
  - In settings.py identation error fixed.
+ - I noticed that Auction create image has stopped loading and display along with auction details.
+
+## Fixed Bugs
+ - Image: Had issues with images path and config.
+ - Bookmarkserializer: A typo error caused malfunction.
+ - In settings.py identation error fixed.
+ - I noticed that Auction create image has stopped loading and display along with auction detail.
 
  - ![settings.py_testing](static/settings.pyt.png)
 
  - ![Bookmarkserializer_validation](static/serialzertest.png)
 
  - ![settings.py_validation](static/settings.pyv.png)
-
+ 
  ## Remaining Bugs
 
-## To fixed:
-
- I noticed that Auction create image has stopped loading and display along with auction detail.
+ - No new bug identified
 
 <br>
 
